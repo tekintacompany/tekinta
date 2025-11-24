@@ -1,0 +1,141 @@
+{
+  "pricingTiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "Perfect for small businesses and startups",
+      "price": 50000,
+      "period": "project",
+      "features": [
+        "Basic website (1-5 pages)",
+        "Mobile responsive design",
+        "Basic SEO optimization",
+        "Contact form integration",
+        "Social media integration",
+        "3 months support"
+      ],
+      "popular": false
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Ideal for growing businesses",
+      "price": 150000,
+      "period": "project",
+      "features": [
+        "Advanced website (5-15 pages)",
+        "Mobile responsive design",
+        "Advanced SEO optimization",
+        "Content management system",
+        "Blog functionality",
+        "Basic e-commerce (up to 20 products)",
+        "Email marketing integration",
+        "6 months support"
+      ],
+      "popular": true
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "description": "For established businesses with complex needs",
+      "price": 300000,
+      "period": "project",
+      "features": [
+        "Custom web application",
+        "Unlimited pages",
+        "Mobile responsive design",
+        "Premium SEO & analytics",
+        "Advanced content management",
+        "Full e-commerce functionality",
+        "Customer portal",
+        "Advanced integrations",
+        "API development",
+        "12 months support"
+      ],
+      "popular": false
+    }
+  ],
+  "bundles": [
+    {
+      "id": "starter-business-pack",
+      "name": "Starter Business Pack",
+      "description": "Everything you need to get your business online",
+      "price": 100000,
+      "period": "one-time",
+      "features": [
+        "Basic website (5 pages)",
+        "Business email setup (5 accounts)",
+        "Basic logo design",
+        "Social media setup (3 platforms)",
+        "Basic SEO setup",
+        "Google My Business setup",
+        "3 months support"
+      ],
+      "savings": "Save ₦25,000 compared to individual services"
+    },
+    {
+      "id": "full-business-pack",
+      "name": "Full Business Pack",
+      "description": "Complete digital solution for your business",
+      "price": 300000,
+      "period": "one-time",
+      "features": [
+        "Advanced website (15 pages)",
+        "Business email setup (15 accounts)",
+        "Professional logo design",
+        "Social media setup and management (3 months)",
+        "Advanced SEO setup",
+        "Google My Business setup and optimization",
+        "Basic POS system setup",
+        "Staff training (2 sessions)",
+        "6 months support"
+      ],
+      "savings": "Save ₦100,000 compared to individual services"
+    },
+    {
+      "id": "pos-agent-pack",
+      "name": "POS Agent Pack",
+      "description": "Complete solution for POS agents",
+      "price": 150000,
+      "period": "one-time",
+      "features": [
+        "POS system setup",
+        "Agent website (5 pages)",
+        "Business email setup (5 accounts)",
+        "Transaction management system",
+        "Customer management system",
+        "Basic accounting integration",
+        "Staff training (2 sessions)",
+        "6 months support"
+      ],
+      "savings": "Save ₦75,000 compared to individual services"
+    }
+  ],
+  "paymentTerms": "70% upfront / 30% on delivery — 7 days support warranty",
+  "paymentMethods": [
+    {
+      "id": "bank-transfer",
+      "name": "Bank Transfer",
+      "description": "Direct transfer to our company account",
+      "instructions": "Bank: Zenith Bank\nAccount Name: TEKINTA Digital Solutions\nAccount Number: 1234567890"
+    },
+    {
+      "id": "paystack",
+      "name": "Paystack",
+      "description": "Secure online payment with Paystack",
+      "instructions": "Click the Pay Now button to complete your payment securely through Paystack."
+    },
+    {
+      "id": "flutterwave",
+      "name": "Flutterwave",
+      "description": "Secure online payment with Flutterwave",
+      "instructions": "Click the Pay Now button to complete your payment securely through Flutterwave."
+    },
+    {
+      "id": "ussd",
+      "name": "USSD",
+      "description": "Pay via USSD code",
+      "instructions": "Dial *123*456*7890# on your registered phone number to make a payment."
+    }
+  ]
+}

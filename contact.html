@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TEKINTA Digital Solutions</title>
+    <meta name="description" content="Connect with TEKINTA Digital Solutions for innovative technology solutions. We're here to transform your business with cutting-edge tech services.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tekinta.pages.dev/contact.html">
+    <meta property="og:title" content="Contact Us - TEKINTA Digital Solutions">
+    <meta property="og:description" content="Connect with TEKINTA Digital Solutions for innovative technology solutions. We're here to transform your business with cutting-edge tech services.">
+    <meta property="og:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tekinta.pages.dev/contact.html">
+    <meta property="twitter:title" content="Contact Us - TEKINTA Digital Solutions">
+    <meta property="twitter:description" content="Connect with TEKINTA Digital Solutions for innovative technology solutions. We're here to transform your business with cutting-edge tech services.">
+    <meta property="twitter:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Us - TEKINTA Digital Solutions",
+        "description": "Connect with TEKINTA Digital Solutions for innovative technology solutions.",
+        "url": "https://tekinta.pages.dev/contact.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "TEKINTA Digital Solutions",
+            "url": "https://tekinta.pages.dev",
+            "logo": "https://tekinta.pages.dev/assets/img/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+2349069102902",
+                "contactType": "Customer Service",
+                "email": "info@tekinta.pages.dev",
+                "availableLanguage": "English"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Abeokuta",
+                "addressLocality": "Ogun State",
+                "addressCountry": "Nigeria"
+            },
+            "openingHours": [
+                "Mo-Fr 09:00-18:00",
+                "Sa 10:00-16:00"
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Custom Styles for Contact Page -->
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-hero {
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+        
+        .contact-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .contact-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        
+        .contact-hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .contact-hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-stats {
+            background: #f8f9fa;
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .contact-stats::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #f8f9fa;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #003B73;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .contact-form-section {
+            padding: 100px 0;
+            background: white;
+            position: relative;
+        }
+        
+        .contact-form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-form-card {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-form-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #003B73, #1e50a2, #0a2463);
+        }
+        
+        .contact-form-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0a2463;
+        }
+        
+        .contact-form-description {
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-group-full {
+            grid-column: span 2;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+        
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #003B73;
+            box-shadow: 0 0 0 3px rgba(0, 59, 115, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-checkbox input {
+            margin-top: 0.25rem;
+            margin-right: 0.75rem;
+        }
+        
+        .form-checkbox label {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .form-checkbox a {
+            color: #003B73;
+            text-decoration: none;
+        }
+        
+        .form-checkbox a:hover {
+            text-decoration: underline;
+        }
+        
+        .form-submit {
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            border: none;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 59, 115, 0.2);
+        }
+        
+        .contact-info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-info-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-info-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #0a2463;
+        }
+        
+        .contact-info-content p {
+            color: #6c757d;
+            margin: 0;
+        }
+        
+        .contact-info-content a {
+            color: #003B73;
+            text-decoration: none;
+        }
+        
+        .contact-info-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-whatsapp-card {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-whatsapp-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-whatsapp-card p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .contact-whatsapp-button {
+            background: white;
+            color: #25D366;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-whatsapp-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact-map-section {
+            padding: 100px 0;
+            background: #f8f9fa;
+            position: relative;
+        }
+        
+        .contact-map-container {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            height: 500px;
+        }
+        
+        .contact-map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 59, 115, 0.1);
+            pointer-events: none;
+        }
+        
+        .contact-faq-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .faq-item.active {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            width: 100%;
+            text-align: left;
+            border: none;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0a2463;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+        }
+        
+        .faq-answer-content {
+            padding: 1.5rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .contact-testimonials {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-testimonials::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonials-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonials-header p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-slider {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-content::before {
+            content: """;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 5rem;
+            color: rgba(0, 59, 115, 0.1);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #495057;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .testimonial-info h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: #0a2463;
+            margin-bottom: 0.25rem;
+        }
+        
+        .testimonial-info p {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .testimonial-rating {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-cta {
+            padding: 100px 0;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .contact-cta h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-cta p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .contact-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            border: none;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 59, 115, 0.2);
+            color: white;
+        }
+        
+        .btn-outline {
+            background: white;
+            color: #003B73;
+            border: 2px solid #003B73;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .btn-outline:hover {
+            background: #003B73;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .contact-form-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .contact-form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group-full {
+                grid-column: span 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-hero p {
+                font-size: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-form-card {
+                padding: 2rem;
+            }
+            
+            .contact-info-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info-icon {
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="TEKINTA Digital Solutions Home">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo" width="180" height="50">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav nav--desktop" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active" aria-current="page">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-navigation">
+                    <span class="mobile-menu-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav nav--mobile" id="mobile-navigation" aria-label="Mobile navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+2349069102902" class="mobile-sticky-bar__button mobile-sticky-bar__button--call" aria-label="Call us">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="mobile-sticky-bar__button mobile-sticky-bar__button--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="contact-hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <h1 id="hero-heading">Let's Create Something Amazing Together</h1>
+                    <p>Ready to transform your business with cutting-edge technology solutions? Our team of experts is here to bring your vision to life.</p>
+                    <div class="contact-hero-buttons">
+                        <a href="#contact-form" class="btn-primary">Start Your Project</a>
+                        <a href="tel:+2349069102902" class="btn-outline">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="contact-stats" aria-labelledby="stats-heading">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="350">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" id="contact-form" aria-labelledby="form-heading">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h2 id="form-heading" class="contact-form-title">Tell Us About Your Project</h2>
+                        <p class="contact-form-description">Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="contact-form-grid">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service" class="form-label">Service Required *</label>
+                                    <select id="service" name="service" class="form-select" required>
+                                        <option value="">Select a service</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="cybersecurity">Cybersecurity</option>
+                                        <option value="pos-systems">POS Systems</option>
+                                        <option value="system-repair">System Repair</option>
+                                        <option value="training">Training</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group form-group-full">
+                                    <label for="message" class="form-label">Project Details</label>
+                                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project requirements, timeline, and budget..."></textarea>
+                                </div>
+                                
+                                <div class="form-group form-group-full">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <label for="newsletter">Subscribe to our newsletter for tech tips and updates</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group form-group-full">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group form-group-full">
+                                    <button type="submit" class="form-submit">
+                                        Send Message
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Visit Our Office</h3>
+                                <p>Abeokuta, Ogun State, Nigeria.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Call Us</h3>
+                                <p><a href="tel:+2349069102902">+234 906 910 2902</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Email Us</h3>
+                                <p><a href="mailto:tekintaglobalconcept@gmail.com">tekintaglobalconcept@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Business Hours</h3>
+                                <p>Mon-Fri: 9am-6pm<br>Sat: 10am-4pm<br>Sun: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-whatsapp-card">
+                            <h3>Need Instant Response?</h3>
+                            <p>Chat with us on WhatsApp for immediate assistance</p>
+                            <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="contact-whatsapp-button" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="contact-map-section" aria-labelledby="map-heading">
+            <div class="container">
+                <h2 id="map-heading" class="section-title">Find Us Here</h2>
+                <div class="contact-map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4145029346884!2d3.375855314770339!3d6.524379325272635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b922f2c4e2b5f%3A0x4b5f3e5d5a5a5a5a!2sAbeokuta%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1629367896543!5m2!1sen!2sng" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="TEKINTA Digital Solutions Location on Google Maps">
+                    </iframe>
+                    <div class="contact-map-overlay"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="contact-faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to common questions about our services</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What services does TEKINTA offer?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>TEKINTA offers a comprehensive range of technology services including web development, cybersecurity solutions, POS systems setup, system repair, software installation, virus removal, blockchain solutions, and technology training. We provide end-to-end technology solutions for businesses of all sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How long does a typical project take?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Project timelines vary depending on complexity and scope. Simple websites typically take 2-4 weeks, while complex web applications may require 8-12 weeks. Cybersecurity audits usually take 1-2 weeks, and POS system installations can be completed within 3-5 days. We provide detailed timelines during our initial consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What are your payment terms?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Our standard payment terms are 70% upfront and 30% upon project completion. For larger projects, we offer flexible payment plans with milestone-based payments. We accept various payment methods including bank transfers, Paystack, Flutterwave, and USSD payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you provide ongoing support?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes, all our projects include post-completion support ranging from 30 days to 12 months, depending on the service. We also offer annual maintenance contracts and retainer packages for businesses that require continuous support and regular updates to their technology solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you work with clients outside Abeokuta?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Absolutely! While we're based in Lagos, we serve clients across Nigeria and internationally. For web development, cybersecurity, and software solutions, we work remotely. For hardware services like POS installation and system repairs, we can arrange on-site visits depending on location and project requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="contact-testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="testimonials-header">
+                    <h2 id="testimonials-heading">What Our Clients Say</h2>
+                    <p>Don't just take our word for it - hear from businesses we've transformed</p>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"TEKINTA completely transformed our online presence with a stunning website that increased our conversion rate by 40%. Their team is professional, responsive, and truly understands our business needs."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/client1.jpg" alt="Tunde Adebayo" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Tunde Adebayo</h4>
+                                <p>CEO, FashionHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The cybersecurity audit conducted by TEKINTA identified vulnerabilities we weren't aware of. Their comprehensive security solutions have given us peace of mind and protected our customer data effectively."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/client2.jpg" alt="Chioma Okoro" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Chioma Okoro</h4>
+                                <p>CTO, SecureBank</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Implementing the POS system from TEKINTA streamlined our retail operations significantly. Sales processing is faster, inventory management is easier, and our customers love the seamless experience."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/client3.jpg" alt="Ahmed Ibrahim" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4>Ahmed Ibrahim</h4>
+                                <p>Owner, MegaMart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="contact-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">Ready to Transform Your Business?</h2>
+                <p>Let's discuss how our technology solutions can help you achieve your business goals</p>
+                <div class="contact-cta-buttons">
+                    <a href="#contact-form" class="btn-primary">Get Started Today</a>
+                    <a href="tel:+2349069102902" class="btn-outline">Call Us Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo" width="180" height="50">
+                    </div>
+                    <p class="footer__tagline">Your Trusted Tech Partner</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10 2.38 10 2.38 10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.74 21 8.23 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75C18.5 7.44 17.94 8 17.25 8C16.56 8 16 7.44 16 6.75C16 6.06 16.56 5.5 17.25 5.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Services</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="services.html#web-development" class="footer__link">Web Development</a></li>
+                        <li class="footer__link-item"><a href="services.html#cybersecurity" class="footer__link">Cybersecurity</a></li>
+                        <li class="footer__link-item"><a href="services.html#pos-systems" class="footer__link">POS Systems</a></li>
+                        <li class="footer__link-item"><a href="services.html#system-repair" class="footer__link">System Repair</a></li>
+                        <li class="footer__link-item"><a href="services.html#training" class="footer__link">Training</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="about.html" class="footer__link">About Us</a></li>
+                        <li class="footer__link-item"><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li class="footer__link-item"><a href="blog.html" class="footer__link">Blog</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li class="footer__link-item"><a href="pricing.html" class="footer__link">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <address class="footer__contact">
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                            </svg>
+                            <span>Abeokuta, Ogun State, Nigeria.</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:+2349069102902">+234 906 910 2902</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V8L12 13L20 8V18ZM20 6L12 11L4 6H20Z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:tekintaglobalconcept@gmail.com">tekintaglobalconcept@gmail.com</a>
+                        </div>
+                    </address>
+                    
+                    <div class="footer__whatsapp">
+                        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2026 TEKINTA Digital Solutions. All rights reserved.
+                </div>
+                <div class="footer__legal">
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="refund.html" class="footer__legal-link">Refund Policy</a>
+                    <a href="sla.html" class="footer__legal-link">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="whatsapp-widget__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    
+    <!-- Custom JavaScript for Contact Page -->
+    <script>
+        // Animated Counter for Stats
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            const countUp = () => {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(countUp, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                });
+            };
+            
+            // Intersection Observer for triggering counter animation
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        countUp();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            const statsSection = document.querySelector('.contact-stats');
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                        faqItem.querySelector('.faq-answer').style.maxHeight = '0';
+                    });
+                    
+                    // Open clicked item if it wasn't open
+                    if (!isOpen) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Form submission handling
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simple form validation
+                    let isValid = true;
+                    const requiredFields = contactForm.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.style.borderColor = '#dc3545';
+                        } else {
+                            field.style.borderColor = '';
+                        }
+                    });
+                    
+                    if (isValid) {
+                        // Show success message
+                        const formMessage = document.createElement('div');
+                        formMessage.className = 'form-message form-message--success';
+                        formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+                        contactForm.appendChild(formMessage);
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                        // Remove message after 5 seconds
+                        setTimeout(() => {
+                            formMessage.remove();
+                        }, 5000);
+                    } else {
+                        // Show error message
+                        const formMessage = document.createElement('div');
+                        formMessage.className = 'form-message form-message--error';
+                        formMessage.textContent = 'Please fill in all required fields.';
+                        contactForm.appendChild(formMessage);
+                        
+                        // Remove message after 5 seconds
+                        setTimeout(() => {
+                            formMessage.remove();
+                        }, 5000);
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <!-- Google Analytics placeholder -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>

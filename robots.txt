@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /data/
+
+Sitemap: https://tekinta.com/sitemap.xml

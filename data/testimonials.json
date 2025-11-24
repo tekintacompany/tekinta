@@ -1,0 +1,64 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Tunde Adebayo",
+      "title": "CEO, TechStart Nigeria",
+      "company": "TechStart Nigeria",
+      "quote": "TEKINTA delivered our website ahead of schedule and exceeded our expectations. Their attention to detail and professionalism is unmatched. The new website has significantly improved our online presence and lead generation.",
+      "rating": 5,
+      "date": "June 2023",
+      "image": "assets/img/testimonials/tunde-adebayo.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chinyere Okoro",
+      "title": "IT Manager, HealthPlus Clinic",
+      "company": "HealthPlus Clinic",
+      "quote": "The cybersecurity audit conducted by TEKINTA identified vulnerabilities we weren't aware of. Their team provided clear recommendations and helped us secure our systems. I highly recommend their services.",
+      "rating": 5,
+      "date": "May 2023",
+      "image": "assets/img/testimonials/chinyere-okoro.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ahmed Ibrahim",
+      "title": "Owner, Lagos Supermarket",
+      "company": "Lagos Supermarket",
+      "quote": "Our new POS system has transformed our business operations. TEKINTA provided excellent training and support throughout the process. Sales have increased, and inventory management is now much more efficient.",
+      "rating": 5,
+      "date": "April 2023",
+      "image": "assets/img/testimonials/ahmed-ibrahim.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Fatima Bello",
+      "title": "Director, EduLearn Academy",
+      "company": "EduLearn Academy",
+      "quote": "The e-learning platform developed by TEKINTA has enabled us to reach more students and provide quality education online. The platform is user-friendly and has all the features we needed. Thank you, TEKINTA!",
+      "rating": 4,
+      "date": "March 2023",
+      "image": "assets/img/testimonials/fatima-bello.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Emeka Nwosu",
+      "title": "CTO, SecureBank",
+      "company": "SecureBank",
+      "quote": "TEKINTA's security audit was thorough and professional. They identified critical vulnerabilities and provided practical solutions to address them. Their expertise in cybersecurity is impressive.",
+      "rating": 5,
+      "date": "February 2023",
+      "image": "assets/img/testimonials/emeka-nwosu.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Aisha Mohammed",
+      "title": "Manager, HotelPlus",
+      "company": "HotelPlus",
+      "quote": "The hotel management system installed by TEKINTA has streamlined our operations significantly. From reservations to billing, everything is now more efficient. Their team was professional and provided excellent training.",
+      "rating": 4,
+      "date": "January 2023",
+      "image": "assets/img/testimonials/aisha-mohammed.jpg"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "portfolioItems": [
+    {
+      "id": 1,
+      "title": "TechStart Nigeria Website",
+      "category": "Web Development",
+      "description": "Modern corporate website for a technology startup",
+      "fullDescription": "We designed and developed a modern, responsive website for TechStart Nigeria, a technology startup focused on providing innovative solutions for African businesses. The website features a clean design, intuitive navigation, and optimized performance for all devices.",
+      "image": "assets/img/portfolio/techstart-nigeria.jpg",
+      "date": "June 2023",
+      "link": "https://techstartnigeria.com",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Node.js"],
+      "beforeAfter": {
+        "before": "assets/img/portfolio/techstart-before.jpg",
+        "after": "assets/img/portfolio/techstart-after.jpg"
+      },
+      "results": [
+        "50% increase in website traffic within 3 months",
+        "30% improvement in conversion rate",
+        "Reduced page load time by 60%",
+        "Improved mobile user experience"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "HealthPlus Clinic POS System",
+      "category": "POS Systems",
+      "description": "Complete POS solution for a private medical clinic",
+      "fullDescription": "We implemented a comprehensive POS system for HealthPlus Clinic, a private medical clinic in Lagos. The system handles patient registration, appointment scheduling, billing, and inventory management for medical supplies.",
+      "image": "assets/img/portfolio/healthplus-pos.jpg",
+      "date": "April 2023",
+      "link": "#",
+      "technologies": ["POS Software", "Inventory Management", "Database Systems"],
+      "results": [
+        "40% reduction in patient wait times",
+        "25% improvement in inventory management",
+        "Streamlined billing process",
+        "Enhanced patient data security"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Lagos Supermarket E-commerce",
+      "category": "E-commerce",
+      "description": "Online store for a leading supermarket chain",
+      "fullDescription": "We developed a comprehensive e-commerce platform for Lagos Supermarket, one of the leading supermarket chains in Nigeria. The platform features product catalog management, online ordering, multiple payment options, and delivery tracking.",
+      "image": "assets/img/portfolio/lagos-supermarket.jpg",
+      "date": "March 2023",
+      "link": "https://lagossupermarket.com",
+      "technologies": ["WooCommerce", "WordPress", "PHP", "MySQL", "Payment Gateway Integration"],
+      "results": [
+        "200% increase in online sales",
+        "Expanded customer reach beyond physical locations",
+        "Improved inventory management",
+        "Enhanced customer loyalty program"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SecureBank Security Audit",
+      "category": "Cybersecurity",
+      "description": "Comprehensive security assessment for a financial institution",
+      "fullDescription": "We conducted a comprehensive security assessment for SecureBank, a financial institution in Nigeria. Our team performed vulnerability scanning, penetration testing (with written authorization), and security policy review to identify and address potential security risks.",
+      "image": "assets/img/portfolio/securebank-audit.jpg",
+      "date": "May 2023",
+      "link": "#",
+      "technologies": ["Security Assessment Tools", "Penetration Testing", "Vulnerability Scanning"],
+      "results": [
+        "Identified and resolved 25 critical vulnerabilities",
+        "Improved security policies and procedures",
+        "Enhanced employee security awareness",
+        "Compliance with financial industry regulations"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "EduLearn Learning Platform",
+      "category": "Web Development",
+      "description": "Online learning platform for educational institutions",
+      "fullDescription": "We developed EduLearn, a comprehensive online learning platform for educational institutions in Nigeria. The platform features course management, student enrollment, progress tracking, and interactive learning tools.",
+      "image": "assets/img/portfolio/edulearn-platform.jpg",
+      "date": "February 2023",
+      "link": "https://edulearn.com.ng",
+      "technologies": ["React", "Node.js", "MongoDB", "Video Streaming", "Payment Integration"],
+      "results": [
+        "Enabled 5 educational institutions to transition to online learning",
+        "Served over 10,000 students",
+        "Improved student engagement by 35%",
+        "Reduced administrative workload by 40%"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "HotelPlus Management System",
+      "category": "Software Installation",
+      "description": "Hotel management software installation and customization",
+      "fullDescription": "We installed and customized a comprehensive hotel management system for HotelPlus, a boutique hotel in Abuja. The system handles reservations, check-in/check-out, billing, inventory management, and reporting.",
+      "image": "assets/img/portfolio/hotelplus-system.jpg",
+      "date": "January 2023",
+      "link": "#",
+      "technologies": ["Hotel Management Software", "Database Systems", "Reporting Tools"],
+      "results": [
+        "30% improvement in reservation management",
+        "25% reduction in check-in/check-out time",
+        "Enhanced reporting capabilities",
+        "Improved guest satisfaction"
+      ]
+    }
+  ]
+}

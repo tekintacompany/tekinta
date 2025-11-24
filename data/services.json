@@ -1,0 +1,177 @@
+{
+  "services": [
+    {
+      "id": "web-development",
+      "title": "Website Development",
+      "icon": "web",
+      "description": "Professional websites and web applications tailored to your business needs.",
+      "fullDescription": "We create custom websites and web applications that help your business stand out online. Our team of experienced developers uses the latest technologies to build fast, secure, and user-friendly websites that convert visitors into customers.",
+      "features": [
+        "Responsive design for all devices",
+        "Search engine optimization (SEO)",
+        "Content management system (CMS)",
+        "E-commerce functionality",
+        "Integration with third-party services",
+        "Ongoing maintenance and support"
+      ],
+      "deliverables": "Fully functional website, source code, documentation, training",
+      "timeframe": "2-8 weeks depending on complexity",
+      "startingPrice": 50000,
+      "category": "web"
+    },
+    {
+      "id": "e-commerce",
+      "title": "E-commerce Solutions",
+      "icon": "shopping-cart",
+      "description": "Complete online store setup with payment integration and inventory management.",
+      "fullDescription": "Our e-commerce solutions provide everything you need to sell products and services online. From product catalog management to secure payment processing, we build online stores that drive sales and growth.",
+      "features": [
+        "Product catalog management",
+        "Shopping cart and checkout",
+        "Payment gateway integration",
+        "Inventory management",
+        "Order tracking and fulfillment",
+        "Customer account management"
+      ],
+      "deliverables": "Fully functional e-commerce website, admin panel, payment setup, training",
+      "timeframe": "3-10 weeks depending on complexity",
+      "startingPrice": 100000,
+      "category": "web"
+    },
+    {
+      "id": "pos-systems",
+      "title": "POS Setup",
+      "icon": "pos",
+      "description": "Complete point-of-sale solutions for retail and hospitality businesses.",
+      "fullDescription": "We provide comprehensive POS solutions that streamline your business operations. Our systems include hardware setup, software installation, and staff training to ensure you get the most out of your investment.",
+      "features": [
+        "Hardware setup and configuration",
+        "Software installation and customization",
+        "Inventory management integration",
+        "Sales reporting and analytics",
+        "Customer management",
+        "Staff training and support"
+      ],
+      "deliverables": "Installed POS system, software configuration, staff training, documentation",
+      "timeframe": "1-2 weeks",
+      "startingPrice": 75000,
+      "category": "hardware"
+    },
+    {
+      "id": "software-installation",
+      "title": "Software Installation",
+      "icon": "software",
+      "description": "Professional installation and configuration of business software applications.",
+      "fullDescription": "Our team handles the installation and configuration of various business software applications, ensuring they work seamlessly with your existing systems and meet your specific business requirements.",
+      "features": [
+        "Software installation and setup",
+        "Configuration for your business needs",
+        "Integration with existing systems",
+        "User account management",
+        "Data migration if required",
+        "Training and documentation"
+      ],
+      "deliverables": "Installed and configured software, user accounts, documentation, training",
+      "timeframe": "1-3 days per application",
+      "startingPrice": 25000,
+      "category": "software"
+    },
+    {
+      "id": "system-repair",
+      "title": "System Repair",
+      "icon": "repair",
+      "description": "Fast and reliable repair services for all your computer systems.",
+      "fullDescription": "Our expert technicians provide fast and reliable repair services for all types of computer systems. From hardware issues to software problems, we diagnose and fix issues to get your systems back up and running quickly.",
+      "features": [
+        "Hardware diagnostics and repair",
+        "Software troubleshooting",
+        "Virus and malware removal",
+        "Data recovery services",
+        "System optimization",
+        "Preventive maintenance"
+      ],
+      "deliverables": "Repaired system, diagnostic report, recommendations",
+      "timeframe": "1-5 days depending on issue",
+      "startingPrice": 15000,
+      "category": "hardware"
+    },
+    {
+      "id": "virus-removal",
+      "title": "Virus Removal",
+      "icon": "security",
+      "description": "Comprehensive virus and malware removal services to protect your systems.",
+      "fullDescription": "Our virus removal services eliminate malware, spyware, ransomware, and other threats from your systems. We also implement security measures to prevent future infections and protect your valuable data.",
+      "features": [
+        "Comprehensive virus and malware scan",
+        "Threat removal and cleanup",
+        "System repair and recovery",
+        "Security software installation",
+        "Security best practices training",
+        "Ongoing protection recommendations"
+      ],
+      "deliverables": "Clean system, security software, security report, recommendations",
+      "timeframe": "1-3 days depending on infection",
+      "startingPrice": 20000,
+      "category": "security"
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity & Pen-testing",
+      "icon": "cybersecurity",
+      "description": "Authorized security assessments and penetration testing to protect your business.",
+      "fullDescription": "Our authorized cybersecurity services include vulnerability assessments, penetration testing, and security implementation to protect your business from cyber threats. All services are conducted ethically and with proper authorization.",
+      "features": [
+        "Vulnerability assessment",
+        "Penetration testing (with written authorization)",
+        "Security policy development",
+        "Security implementation",
+        "Employee security training",
+        "Ongoing security monitoring"
+      ],
+      "deliverables": "Security assessment report, recommendations, implementation plan",
+      "timeframe": "1-2 weeks depending on scope",
+      "startingPrice": 150000,
+      "category": "security",
+      "disclaimer": "All penetration testing services require written authorization and are conducted in compliance with applicable laws and regulations."
+    },
+    {
+      "id": "blockchain",
+      "title": "Blockchain & Crypto Monitoring",
+      "icon": "blockchain",
+      "description": "Legal blockchain solutions and cryptocurrency monitoring services.",
+      "fullDescription": "We provide legal and compliant blockchain solutions and cryptocurrency monitoring services. Our services focus on security, transparency, and compliance with all applicable regulations.",
+      "features": [
+        "Blockchain consulting",
+        "Cryptocurrency monitoring",
+        "Security audit for blockchain applications",
+        "Compliance with regulations",
+        "Training on blockchain security",
+        "Ongoing monitoring services"
+      ],
+      "deliverables": "Consulting report, monitoring setup, security audit report, training",
+      "timeframe": "1-4 weeks depending on scope",
+      "startingPrice": 200000,
+      "category": "blockchain",
+      "disclaimer": "All blockchain and cryptocurrency services are conducted in compliance with applicable laws and regulations. We do not engage in any illegal activities."
+    },
+    {
+      "id": "training",
+      "title": "Training & Retainer Packages",
+      "icon": "training",
+      "description": "Comprehensive training packages and ongoing support for your team.",
+      "fullDescription": "Our training packages equip your team with the skills needed to effectively use and manage your technology systems. We also offer retainer packages for ongoing support and maintenance.",
+      "features": [
+        "Customized training programs",
+        "Hands-on workshops",
+        "Documentation and guides",
+        "Ongoing support (retainer)",
+        "System maintenance",
+        "Priority response times"
+      ],
+      "deliverables": "Training sessions, documentation, support agreement",
+      "timeframe": "Training: 1-5 days, Retainer: Monthly/Quarterly",
+      "startingPrice": 50000,
+      "category": "training"
+    }
+  ]
+}

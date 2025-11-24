@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - TEKINTA Digital Solutions</title>
+    <meta name="description" content="Explore our transparent pricing plans for web development, cybersecurity, POS systems, and other technology services. TEKINTA Digital Solutions offers competitive pricing for businesses in Nigeria.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tekinta.pages.dev/pricing.html">
+    <meta property="og:title" content="Pricing - TEKINTA Digital Solutions">
+    <meta property="og:description" content="Explore our transparent pricing plans for web development, cybersecurity, POS systems, and other technology services. TEKINTA Digital Solutions offers competitive pricing for businesses in Nigeria.">
+    <meta property="og:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tekinta.pages.dev/pricing.html">
+    <meta property="twitter:title" content="Pricing - TEKINTA Digital Solutions">
+    <meta property="twitter:description" content="Explore our transparent pricing plans for web development, cybersecurity, POS systems, and other technology services. TEKINTA Digital Solutions offers competitive pricing for businesses in Nigeria.">
+    <meta property="twitter:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Pricing - TEKINTA Digital Solutions",
+        "description": "Explore our transparent pricing plans for technology services",
+        "url": "https://tekinta.pages.dev/pricing.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "TEKINTA Digital Solutions",
+            "url": "https://tekinta.pages.dev",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tekinta.pages.dev/assets/img/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Custom Styles for Pricing Page -->
+    <style>
+        /* Pricing Page Specific Styles */
+        .pricing-hero {
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+        
+        .pricing-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .pricing-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        
+        .pricing-hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pricing-hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .pricing-hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .pricing-intro {
+            background: #f8f9fa;
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .pricing-intro::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #f8f9fa;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        
+        .intro-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .intro-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 1.5rem;
+        }
+        
+        .intro-content p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .pricing-plans {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .plan-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .plan-card.featured {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 59, 115, 0.2);
+        }
+        
+        .plan-card.featured::before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transform: rotate(45deg);
+        }
+        
+        .plan-header {
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .plan-card.featured .plan-header {
+            background: linear-gradient(135deg, #0a2463, #1e50a2);
+        }
+        
+        .plan-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-currency {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .plan-amount {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        .plan-period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .plan-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .plan-features {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+        
+        .plan-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .plan-feature i {
+            color: #003B73;
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        
+        .plan-feature-text {
+            font-size: 0.95rem;
+            color: #495057;
+        }
+        
+        .plan-footer {
+            padding: 0 2rem 2rem;
+        }
+        
+        .plan-button {
+            width: 100%;
+            padding: 0.875rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .plan-card:not(.featured) .plan-button {
+            background: white;
+            color: #003B73;
+            border: 2px solid #003B73;
+        }
+        
+        .plan-card:not(.featured) .plan-button:hover {
+            background: #003B73;
+            color: white;
+        }
+        
+        .plan-card.featured .plan-button {
+            background: linear-gradient(135deg, #0a2463, #1e50a2);
+            color: white;
+        }
+        
+        .plan-card.featured .plan-button:hover {
+            background: linear-gradient(135deg, #1e50a2, #0a2463);
+        }
+        
+        .pricing-comparison {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .comparison-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #0a2463;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .comparison-table th:first-child {
+            text-align: left;
+            background: white;
+        }
+        
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: #495057;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table .check {
+            color: #28a745;
+            font-size: 1.2rem;
+        }
+        
+        .comparison-table .cross {
+            color: #dc3545;
+            font-size: 1.2rem;
+        }
+        
+        .bundle-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .bundle-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .bundle-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bundle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .bundle-header {
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .bundle-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .bundle-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .bundle-price {
+            padding: 2rem;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        
+        .bundle-price-amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 0.5rem;
+        }
+        
+        .bundle-price-period {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .bundle-savings {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 0.75rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .bundle-features {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+        
+        .bundle-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .bundle-feature i {
+            color: #003B73;
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        
+        .bundle-feature-text {
+            font-size: 0.95rem;
+            color: #495057;
+        }
+        
+        .bundle-footer {
+            padding: 0 2rem 2rem;
+        }
+        
+        .bundle-button {
+            width: 100%;
+            padding: 0.875rem;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .bundle-button:hover {
+            background: linear-gradient(135deg, #1e50a2, #0a2463);
+        }
+        
+        .payment-methods {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .payment-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .payment-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .payment-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .payment-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .payment-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #0a2463;
+            margin-bottom: 1rem;
+        }
+        
+        .payment-description {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .payment-steps {
+            text-align: left;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .payment-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        
+        .payment-step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .payment-step-number {
+            width: 24px;
+            height: 24px;
+            background: #003B73;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        
+        .payment-step-text {
+            font-size: 0.9rem;
+            color: #495057;
+        }
+        
+        .faq-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .faq-item.active {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            width: 100%;
+            text-align: left;
+            border: none;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0a2463;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: white;
+        }
+        
+        .faq-answer-content {
+            padding: 1.5rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-content p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #003B73;
+            border: none;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #003B73;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .plan-card.featured {
+                transform: scale(1);
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+            
+            .comparison-table table {
+                min-width: 600px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .pricing-hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .plan-amount {
+                font-size: 2.5rem;
+            }
+            
+            .bundle-price-amount {
+                font-size: 2rem;
+            }
+            
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .pricing-hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="TEKINTA Digital Solutions Home">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo" width="180" height="50">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav nav--desktop" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link nav__link--active" aria-current="page">Pricing</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-navigation">
+                    <span class="mobile-menu-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav nav--mobile" id="mobile-navigation" aria-label="Mobile navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link nav__link--active" aria-current="page">Pricing</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+2349069102902" class="mobile-sticky-bar__button mobile-sticky-bar__button--call" aria-label="Call us">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="mobile-sticky-bar__button mobile-sticky-bar__button--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="pricing-hero" aria-labelledby="pricing-heading">
+            <div class="container">
+                <div class="pricing-hero-content">
+                    <h1 id="pricing-heading">Transparent Pricing, Exceptional Value</h1>
+                    <p>No hidden fees, just straightforward pricing plans designed to grow your business</p>
+                    <div class="pricing-hero-buttons">
+                        <a href="#pricing-plans" class="btn-primary">View Plans</a>
+                        <a href="#bundle-packages" class="btn-outline">View Bundles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Intro Section -->
+        <section class="pricing-intro" aria-labelledby="intro-heading">
+            <div class="container">
+                <div class="intro-content">
+                    <h2 id="intro-heading">Simple, Transparent Pricing</h2>
+                    <p>At TEKINTA, we believe in providing exceptional value without hidden costs. Our pricing is designed to be transparent, competitive, and tailored to meet the unique needs of your business. Whether you're a startup or an established enterprise, we have a plan that's right for you.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Plans Section -->
+        <section class="pricing-plans" id="pricing-plans" aria-labelledby="plans-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="plans-heading" class="section-title">Choose Your Plan</h2>
+                    <p class="section-subtitle">Flexible pricing options designed for businesses of all sizes</p>
+                </div>
+                
+                <div class="plans-container">
+                    <!-- Basic Plan -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Basic</h3>
+                            <div class="plan-price">
+                                <span class="plan-currency">₦</span>
+                                <span class="plan-amount">85,000</span>
+                                <span class="plan-period">/service</span>
+                            </div>
+                            <p class="plan-description">Perfect for small businesses and startups</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Basic Web Development (5 pages)</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Basic Cybersecurity Setup</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">POS System with Basic Hardware</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">1 Training Session</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">7 Days Support</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="contact.html?plan=basic" class="plan-button">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Plan -->
+                    <div class="plan-card featured">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Professional</h3>
+                            <div class="plan-price">
+                                <span class="plan-currency">₦</span>
+                                <span class="plan-amount">170,000</span>
+                                <span class="plan-period">/service</span>
+                            </div>
+                            <p class="plan-description">Ideal for growing businesses</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Professional Web Development (15 pages)</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Comprehensive Cybersecurity</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">POS System with Standard Hardware</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">3 Training Sessions</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">14 Days Support</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Priority Service</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="contact.html?plan=professional" class="plan-button">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Enterprise Plan -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <div class="plan-price">
+                                <span class="plan-currency">₦</span>
+                                <span class="plan-amount">350,000</span>
+                                <span class="plan-period">/service</span>
+                            </div>
+                            <p class="plan-description">For established businesses with complex needs</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Enterprise Web Development (Unlimited pages)</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Advanced Cybersecurity with 24/7 Monitoring</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">POS System with Premium Hardware</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">5 Training Sessions</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">30 Days Support</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Dedicated Account Manager</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="plan-feature-text">Custom Solutions</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="contact.html?plan=enterprise" class="plan-button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Comparison Section -->
+        <section class="pricing-comparison" aria-labelledby="comparison-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="comparison-heading" class="section-title">Plan Comparison</h2>
+                    <p class="section-subtitle">See the features included in each plan at a glance</p>
+                </div>
+                
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Basic</th>
+                                <th>Professional</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>Up to 5 pages</td>
+                                <td>Up to 15 pages</td>
+                                <td>Unlimited pages</td>
+                            </tr>
+                            <tr>
+                                <td>Responsive Design</td>
+                                <td><i class="fas fa-check check"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>CMS Integration</td>
+                                <td><i class="fas fa-times cross"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>SEO Optimization</td>
+                                <td>Basic</td>
+                                <td>Advanced</td>
+                                <td>Premium</td>
+                            </tr>
+                            <tr>
+                                <td>Cybersecurity</td>
+                                <td>Basic</td>
+                                <td>Comprehensive</td>
+                                <td>Advanced with 24/7 Monitoring</td>
+                            </tr>
+                            <tr>
+                                <td>POS Hardware</td>
+                                <td>Basic</td>
+                                <td>Standard</td>
+                                <td>Premium</td>
+                            </tr>
+                            <tr>
+                                <td>Multi-Store Support</td>
+                                <td><i class="fas fa-times cross"></i></td>
+                                <td><i class="fas fa-times cross"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>On-site Service</td>
+                                <td><i class="fas fa-times cross"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Priority Support</td>
+                                <td><i class="fas fa-times cross"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                                <td><i class="fas fa-check check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Support Duration</td>
+                                <td>7 Days</td>
+                                <td>14 Days</td>
+                                <td>30 Days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bundle Packages Section -->
+        <section class="bundle-section" id="bundle-packages" aria-labelledby="bundle-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="bundle-heading" class="section-title">Bundle Packages</h2>
+                    <p class="section-subtitle">Save more with our comprehensive service bundles</p>
+                </div>
+                
+                <div class="bundle-cards">
+                    <!-- Startup Bundle -->
+                    <div class="bundle-card">
+                        <div class="bundle-header">
+                            <h3 class="bundle-name">Startup Bundle</h3>
+                            <p class="bundle-description">Perfect for new businesses establishing their online presence</p>
+                        </div>
+                        <div class="bundle-price">
+                            <div class="bundle-price-amount">₦290,000</div>
+                            <div class="bundle-price-period">one-time payment</div>
+                        </div>
+                        <div class="bundle-savings">Save ₦50,000 compared to individual services</div>
+                        <div class="bundle-features">
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Basic Web Development (5 pages)</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Basic Cybersecurity Setup</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">POS System with Basic Hardware</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">1 Training Session</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">14 Days Support</span>
+                            </div>
+                        </div>
+                        <div class="bundle-footer">
+                            <a href="contact.html?bundle=startup" class="bundle-button">Choose Bundle</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Growth Bundle -->
+                    <div class="bundle-card">
+                        <div class="bundle-header">
+                            <h3 class="bundle-name">Growth Bundle</h3>
+                            <p class="bundle-description">Ideal for growing businesses expanding their digital capabilities</p>
+                        </div>
+                        <div class="bundle-price">
+                            <div class="bundle-price-amount">₦680,000</div>
+                            <div class="bundle-price-period">one-time payment</div>
+                        </div>
+                        <div class="bundle-savings">Save ₦150,000 compared to individual services</div>
+                        <div class="bundle-features">
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Professional Web Development (15 pages)</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Comprehensive Cybersecurity</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">POS System with Standard Hardware</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">3 Training Sessions</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">30 Days Support</span>
+                            </div>
+                        </div>
+                        <div class="bundle-footer">
+                            <a href="contact.html?bundle=growth" class="bundle-button">Choose Bundle</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Enterprise Bundle -->
+                    <div class="bundle-card">
+                        <div class="bundle-header">
+                            <h3 class="bundle-name">Enterprise Bundle</h3>
+                            <p class="bundle-description">Complete solution for established businesses with complex needs</p>
+                        </div>
+                        <div class="bundle-price">
+                            <div class="bundle-price-amount">₦1,270,000</div>
+                            <div class="bundle-price-period">one-time payment</div>
+                        </div>
+                        <div class="bundle-savings">Save ₦300,000 compared to individual services</div>
+                        <div class="bundle-features">
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Enterprise Web Development (Unlimited pages)</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Advanced Cybersecurity with 24/7 Monitoring</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">POS System with Premium Hardware</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">5 Training Sessions</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">60 Days Support</span>
+                            </div>
+                            <div class="bundle-feature">
+                                <i class="fas fa-check"></i>
+                                <span class="bundle-feature-text">Priority Service</span>
+                            </div>
+                        </div>
+                        <div class="bundle-footer">
+                            <a href="contact.html?bundle=enterprise" class="bundle-button">Choose Bundle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Payment Methods Section -->
+        <section class="payment-methods" aria-labelledby="payment-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="payment-heading" class="section-title">Payment Methods</h2>
+                    <p class="section-subtitle">We offer flexible payment options for your convenience</p>
+                </div>
+                
+                <div class="payment-cards">
+                    <!-- Bank Transfer -->
+                    <div class="payment-card">
+                        <div class="payment-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="payment-name">Bank Transfer</h3>
+                        <p class="payment-description">Direct transfer to our company account</p>
+                        <div class="payment-steps">
+                            <div class="payment-step">
+                                <div class="payment-step-number">1</div>
+                                <div class="payment-step-text">Log in to your banking app</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">2</div>
+                                <div class="payment-step-text">Select transfer option</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">3</div>
+                                <div class="payment-step-text">Use our account details</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- USSD Payment -->
+                    <div class="payment-card">
+                        <div class="payment-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="payment-name">USSD Payment</h3>
+                        <p class="payment-description">Quick payment using your mobile phone</p>
+                        <div class="payment-steps">
+                            <div class="payment-step">
+                                <div class="payment-step-number">1</div>
+                                <div class="payment-step-text">Dial *901# on your mobile</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">2</div>
+                                <div class="payment-step-text">Select Pay Bills &gt; Merchant</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">3</div>
+                                <div class="payment-step-text">Enter TEKINTA and amount</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Payment -->
+                    <div class="payment-card">
+                        <div class="payment-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3 class="payment-name">Mobile Payment</h3>
+                        <p class="payment-description">Pay using popular mobile money apps</p>
+                        <div class="payment-steps">
+                            <div class="payment-step">
+                                <div class="payment-step-number">1</div>
+                                <div class="payment-step-text">Open your payment app</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">2</div>
+                                <div class="payment-step-text">Select Send Money</div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="payment-step-number">3</div>
+                                <div class

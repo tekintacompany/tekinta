@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TEKINTA Digital Solutions</title>
+    <meta name="description" content="Explore our comprehensive technology services including web development, cybersecurity, POS systems, system repair, and more. TEKINTA Digital Solutions is your trusted tech partner in Nigeria.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tekinta.pages.dev/services.html">
+    <meta property="og:title" content="Our Services - TEKINTA Digital Solutions">
+    <meta property="og:description" content="Explore our comprehensive technology services including web development, cybersecurity, POS systems, system repair, and more. TEKINTA Digital Solutions is your trusted tech partner in Nigeria.">
+    <meta property="og:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tekinta.pages.dev/services.html">
+    <meta property="twitter:title" content="Our Services - TEKINTA Digital Solutions">
+    <meta property="twitter:description" content="Explore our comprehensive technology services including web development, cybersecurity, POS systems, system repair, and more. TEKINTA Digital Solutions is your trusted tech partner in Nigeria.">
+    <meta property="twitter:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Additional styles for animations and components -->
+    <style>
+        /* Corporate Color Palette */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00A8E8;
+            --accent-color: #FF6B35;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+            --success-color: #28a745;
+            --gradient-1: linear-gradient(135deg, #0056b3, #00A8E8);
+            --gradient-2: linear-gradient(135deg, #00A8E8, #7ec8e3);
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Service card hover effects */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-card__icon {
+            padding: 2rem 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .service-card__title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .service-card__description {
+            padding: 0 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .service-card__link {
+            display: inline-block;
+            margin: 0 auto 2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .service-card__link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .service-card__link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .service-card__link:hover::after {
+            width: 100%;
+        }
+        
+        /* Process steps */
+        .process-steps {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: calc(100% - 80px);
+            width: 3px;
+            background: var(--gradient-1);
+            z-index: 1;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 100px;
+            margin-bottom: 40px;
+            z-index: 2;
+        }
+        
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .process-step__number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+        }
+        
+        .process-step__title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        /* Responsive process steps */
+        @media (max-width: 768px) {
+            .process-steps::before {
+                left: 20px;
+            }
+            
+            .process-step {
+                padding-left: 70px;
+            }
+            
+            .process-step__number {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                left: 0;
+            }
+        }
+        
+        /* FAQ accordion */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 15px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(0, 86, 179, 0.05);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 20px 20px;
+        }
+        
+        /* Hero Section Enhancements */
+        .hero--services {
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.9), rgba(0, 168, 232, 0.8)), url('assets/img/services-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .hero--services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/img/pattern.svg');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .hero__title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero__subtitle {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .btn--primary {
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn--primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn--outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn--outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Services Filter */
+        .services-filter {
+            margin-bottom: 3rem;
+        }
+        
+        .services-filter__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .services-filter__btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: white;
+            border: 2px solid var(--border-color);
+            color: var(--text-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .services-filter__btn:hover {
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        
+        .services-filter__btn.active {
+            background: var(--gradient-1);
+            color: white;
+            border-color: transparent;
+        }
+        
+        /* Service Detail Section */
+        .service-detail {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .service-detail:last-child {
+            border-bottom: none;
+        }
+        
+        .service-detail__inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .service-detail__content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .service-detail__image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-detail__image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-detail__image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .service-detail__title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .service-detail__title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+        
+        .service-detail__description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .service-detail__features {
+            margin-bottom: 2rem;
+        }
+        
+        .service-detail__features h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .service-detail__features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-detail__features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .service-detail__features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        
+        .service-detail__info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .service-detail__info-item {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .service-detail__info-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .testimonials__slider {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .testimonial-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-card__text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-card__author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-card__author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .testimonial-card__author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/img/pattern.svg');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .cta__inner {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta__title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta__subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn--large {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+        }
+        
+        .btn--outline.btn--large {
+            border-color: white;
+            color: white;
+        }
+        
+        .btn--outline.btn--large:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .stats__grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .stat-card {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card__number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card__label {
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+        
+        /* Certifications Section */
+        .certifications {
+            padding: 3rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .certifications__grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .certification-badge {
+            height: 80px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .certification-badge:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Service Icons */
+        .icon-web {
+            color: #4285F4;
+        }
+        
+        .icon-security {
+            color: #EA4335;
+        }
+        
+        .icon-pos {
+            color: #34A853;
+        }
+        
+        .icon-repair {
+            color: #FBBC05;
+        }
+        
+        .icon-software {
+            color: #8E44AD;
+        }
+        
+        .icon-blockchain {
+            color: #3498DB;
+        }
+        
+        .icon-training {
+            color: #E67E22;
+        }
+        
+        .icon-consulting {
+            color: #16A085;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav nav--desktop">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="mobile-menu-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav nav--mobile">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+2349069102902" class="mobile-sticky-bar__button mobile-sticky-bar__button--call" aria-label="Call us">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="mobile-sticky-bar__button mobile-sticky-bar__button--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero hero--services">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title fade-in">Technology Solutions That Drive Your Business Forward</h1>
+                    <p class="hero__subtitle fade-in">Comprehensive digital services tailored to meet your unique business needs</p>
+                    <div class="hero__actions fade-in">
+                        <a href="#services" class="btn btn--primary">Explore Our Services</a>
+                        <a href="contact.html" class="btn btn--outline">Get a Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">500+</div>
+                        <div class="stat-card__label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">300+</div>
+                        <div class="stat-card__label">Satisfied Clients</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">15+</div>
+                        <div class="stat-card__label">Industry Certifications</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">24/7</div>
+                        <div class="stat-card__label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Our Services</h2>
+                    <p class="section-header__subtitle fade-in">Comprehensive technology solutions for your business</p>
+                </div>
+                
+                <div class="services-filter">
+                    <div class="services-filter__buttons">
+                        <button class="services-filter__btn active" data-filter="all">All Services</button>
+                        <button class="services-filter__btn" data-filter="web">Web</button>
+                        <button class="services-filter__btn" data-filter="software">Software</button>
+                        <button class="services-filter__btn" data-filter="hardware">Hardware</button>
+                        <button class="services-filter__btn" data-filter="security">Security</button>
+                        <button class="services-filter__btn" data-filter="blockchain">Blockchain</button>
+                        <button class="services-filter__btn" data-filter="training">Training</button>
+                    </div>
+                </div>
+                
+                <div class="services-grid" id="services-container">
+                    <!-- Web Development -->
+                    <div class="service-card fade-in" data-category="web">
+                        <div class="service-card__icon">
+                            <svg class="icon-web" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                                <path d="M12 4.5L4 8.5V12C4 15.5 5.8 18.7 8.6 20.6L12 21.2L15.4 20.6C18.2 18.7 20 15.5 20 12V8.5L12 4.5Z" fill="white" opacity="0.3"/>
+                                <path d="M16 11.78L20.24 4.45L21.97 5.45L16.74 14.5L10.23 10.75L5.46 19H22V21H2V19H3.5L9.5 8L16 11.78Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__description">
+                            Custom websites and web applications that help your business stand out online.
+                        </p>
+                        <a href="#web-development" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- Cybersecurity -->
+                    <div class="service-card fade-in" data-category="security">
+                        <div class="service-card__icon">
+                            <svg class="icon-security" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z" fill="currentColor"/>
+                                <path d="M12 7C13.66 7 15 8.34 15 10C15 11.66 13.66 13 12 13C10.34 13 9 11.66 9 10C9 8.34 10.34 7 12 7Z" fill="white" opacity="0.3"/>
+                                <path d="M12 14C14.76 14 17 11.76 17 9C17 6.24 14.76 4 12 4C9.24 4 7 6.24 7 9C7 11.76 9.24 14 12 14ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6Z" fill="white"/>
+                                <path d="M12 15C8.67 15 6 17.67 6 21H18C18 17.67 15.33 15 12 15Z" fill="white" opacity="0.3"/>
+                                <path d="M12 16C14.76 16 17 18.24 17 21H7C7 18.24 9.24 16 12 16Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Cybersecurity</h3>
+                        <p class="service-card__description">
+                            Protect your business from digital threats with our comprehensive security solutions.
+                        </p>
+                        <a href="#cybersecurity" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- POS Systems -->
+                    <div class="service-card fade-in" data-category="software">
+                        <div class="service-card__icon">
+                            <svg class="icon-pos" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20V16H4V6Z" fill="currentColor"/>
+                                <path d="M4 18H20V20H4V18Z" fill="currentColor"/>
+                                <path d="M6 8H18V14H6V8Z" fill="white" opacity="0.3"/>
+                                <path d="M8 10H16V12H8V10Z" fill="white"/>
+                                <path d="M2 4H22V6H2V4Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">POS Systems</h3>
+                        <p class="service-card__description">
+                            Streamline your sales process with our reliable and easy-to-use point-of-sale systems.
+                        </p>
+                        <a href="#pos-systems" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- System Repair -->
+                    <div class="service-card fade-in" data-category="hardware">
+                        <div class="service-card__icon">
+                            <svg class="icon-repair" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9ZM12 13C11.45 13 11 12.55 11 12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">System Repair</h3>
+                        <p class="service-card__description">
+                            Fast and reliable repair services for all your hardware and software issues.
+                        </p>
+                        <a href="#system-repair" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- Software Installation -->
+                    <div class="service-card fade-in" data-category="software">
+                        <div class="service-card__icon">
+                            <svg class="icon-software" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Software Installation</h3>
+                        <p class="service-card__description">
+                            Professional installation and configuration of software for optimal performance.
+                        </p>
+                        <a href="#software-installation" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- Blockchain Solutions -->
+                    <div class="service-card fade-in" data-category="blockchain">
+                        <div class="service-card__icon">
+                            <svg class="icon-blockchain" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Blockchain Solutions</h3>
+                        <p class="service-card__description">
+                            Innovative blockchain technology to secure and streamline your business operations.
+                        </p>
+                        <a href="#blockchain-solutions" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- Training -->
+                    <div class="service-card fade-in" data-category="training">
+                        <div class="service-card__icon">
+                            <svg class="icon-training" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13.18V4H19V13.18C19 13.97 18.33 14.59 17.54 14.59H6.46C5.67 14.59 5 13.97 5 13.18Z" fill="currentColor"/>
+                                <path d="M7 6H17V12H7V6Z" fill="white" opacity="0.3"/>
+                                <path d="M12 8C13.66 8 15 9.34 15 11C15 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11C9 9.34 10.34 8 12 8Z" fill="white"/>
+                                <path d="M9 16H15V18H9V16Z" fill="currentColor"/>
+                                <path d="M12 20C13.66 20 15 18.66 15 17H9C9 18.66 10.34 20 12 20Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Training</h3>
+                        <p class="service-card__description">
+                            Empower your team with the skills they need to leverage technology effectively.
+                        </p>
+                        <a href="#training" class="service-card__link">Learn More</a>
+                    </div>
+                    
+                    <!-- IT Consulting -->
+                    <div class="service-card fade-in" data-category="software">
+                        <div class="service-card__icon">
+                            <svg class="icon-consulting" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">IT Consulting</h3>
+                        <p class="service-card__description">
+                            Expert advice to help you make informed technology decisions for your business.
+                        </p>
+                        <a href="#it-consulting" class="service-card__link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section class="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Certifications & Partnerships</h2>
+                    <p class="section-header__subtitle fade-in">Recognized by industry leaders</p>
+                </div>
+                
+                <div class="certifications__grid">
+                    <img src="assets/img/certifications/microsoft.png" alt="Microsoft Certified Partner" class="certification-badge fade-in">
+                    <img src="assets/img/certifications/cisco.png" alt="Cisco Certified" class="certification-badge fade-in">
+                    <img src="assets/img/certifications/comptia.png" alt="CompTIA Certified" class="certification-badge fade-in">
+                    <img src="assets/img/certifications/aws.png" alt="AWS Certified" class="certification-badge fade-in">
+                    <img src="assets/img/certifications/google.png" alt="Google Cloud Partner" class="certification-badge fade-in">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Service Details Sections -->
+        <section id="services" class="service-details">
+            <div class="container">
+                <!-- Web Development -->
+                <div id="web-development" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">Web Development</h2>
+                            <p class="service-detail__description fade-in">
+                                We create custom websites and web applications that help your business stand out online. Our team of experienced developers uses the latest technologies to build fast, secure, and user-friendly websites that convert visitors into customers.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Responsive design for all devices</li>
+                                    <li>Search engine optimization (SEO)</li>
+                                    <li>Content management system (CMS)</li>
+                                    <li>E-commerce functionality</li>
+                                    <li>Integration with third-party services</li>
+                                    <li>Ongoing maintenance and support</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Fully functional website, source code, documentation, training</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>2-8 weeks depending on complexity</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦85,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=web-development" class="btn btn--primary">Get a Quote</a>
+                                <a href="portfolio.html" class="btn btn--outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/webdesign1.jpg" alt="Web Development Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity -->
+                <div id="cybersecurity" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">Cybersecurity</h2>
+                            <p class="service-detail__description fade-in">
+                                Protect your business from digital threats with our comprehensive cybersecurity solutions. We assess your vulnerabilities, implement robust security measures, and provide ongoing monitoring to ensure your systems remain secure.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Security assessment and vulnerability testing</li>
+                                    <li>Firewall configuration and management</li>
+                                    <li>Antivirus and malware protection</li>
+                                    <li>Data encryption and backup solutions</li>
+                                    <li>Employee security awareness training</li>
+                                    <li>24/7 security monitoring</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Security assessment report, implementation plan, security systems</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>1-4 weeks depending on scope</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦85,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=cybersecurity" class="btn btn--primary">Get a Quote</a>
+                                <a href="portfolio.html" class="btn btn--outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/cyber.jpg" alt="Cybersecurity Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- POS Systems -->
+                <div id="pos-systems" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">POS Systems</h2>
+                            <p class="service-detail__description fade-in">
+                                Streamline your sales process with our reliable and easy-to-use point-of-sale systems. We provide end-to-end POS solutions including hardware, software, installation, and training to help you manage your business more efficiently.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Sales and inventory management</li>
+                                    <li>Customer relationship management (CRM)</li>
+                                    <li>Payment processing integration</li>
+                                    <li>Reporting and analytics</li>
+                                    <li>Multi-store support</li>
+                                    <li>Offline functionality</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>POS hardware, software installation, user training, support</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>1-2 weeks for setup and implementation</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦100,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=pos-systems" class="btn btn--primary">Get a Quote</a>
+                                <a href="portfolio.html" class="btn btn--outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="POS Systems Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- System Repair -->
+                <div id="system-repair" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">System Repair</h2>
+                            <p class="service-detail__description fade-in">
+                                Fast and reliable repair services for all your hardware and software issues. Our certified technicians diagnose and resolve problems quickly to minimize downtime and get your systems back up and running.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Hardware repair and replacement</li>
+                                    <li>Software troubleshooting and repair</li>
+                                    <li>Virus and malware removal</li>
+                                    <li>Data recovery services</li>
+                                    <li>Network issue resolution</li>
+                                    <li>On-site and remote support</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Repaired systems, diagnostic report, maintenance recommendations</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>Same day to 3 days depending on issue</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦15,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=system-repair" class="btn btn--primary">Get a Quote</a>
+                                <a href="tel:+2341234567890" class="btn btn--outline">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="System Repair Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software Installation -->
+                <div id="software-installation" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">Software Installation</h2>
+                            <p class="service-detail__description fade-in">
+                                Professional installation and configuration of software for optimal performance. We ensure that your software is properly installed, configured, and integrated with your existing systems.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Software installation and configuration</li>
+                                    <li>System compatibility assessment</li>
+                                    <li>Data migration and integration</li>
+                                    <li>Customization and optimization</li>
+                                    <li>User training and documentation</li>
+                                    <li>Ongoing support and updates</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Installed software, configuration settings, user documentation</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>1-3 days depending on complexity</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦25,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=software-installation" class="btn btn--primary">Get a Quote</a>
+                                <a href="tel:+2341234567890" class="btn btn--outline">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="Software Installation Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blockchain Solutions -->
+                <div id="blockchain-solutions" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">Blockchain Solutions</h2>
+                            <p class="service-detail__description fade-in">
+                                Innovative blockchain technology to secure and streamline your business operations. We develop custom blockchain solutions that enhance transparency, security, and efficiency in your business processes.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Custom blockchain development</li>
+                                    <li>Smart contract development</li>
+                                    <li>Cryptocurrency integration</li>
+                                    <li>Supply chain solutions</li>
+                                    <li>Digital identity verification</li>
+                                    <li>Blockchain consulting and training</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Blockchain solution, smart contracts, documentation, training</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>4-12 weeks depending on complexity</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦350,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=blockchain-solutions" class="btn btn--primary">Get a Quote</a>
+                                <a href="portfolio.html" class="btn btn--outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="Blockchain Solutions Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Training -->
+                <div id="training" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">Training</h2>
+                            <p class="service-detail__description fade-in">
+                                Empower your team with the skills they need to leverage technology effectively. We offer customized training programs on various technology topics to help your team stay ahead in the digital age.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>Customized training programs</li>
+                                    <li>Hands-on practical sessions</li>
+                                    <li>Training materials and resources</li>
+                                    <li>Assessment and certification</li>
+                                    <li>On-site and online training options</li>
+                                    <li>Ongoing support and refresher courses</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Training sessions, materials, certificates, ongoing support</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>1-5 days depending on program</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦50,000 per session</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=training" class="btn btn--primary">Get a Quote</a>
+                                <a href="blog.html" class="btn btn--outline">View Resources</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="Training Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- IT Consulting -->
+                <div id="it-consulting" class="service-detail">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__content">
+                            <h2 class="service-detail__title fade-in">IT Consulting</h2>
+                            <p class="service-detail__description fade-in">
+                                Expert advice to help you make informed technology decisions for your business. Our consultants work with you to understand your business needs and recommend the best technology solutions to achieve your goals.
+                            </p>
+                            <div class="service-detail__features fade-in">
+                                <h3>Key Features:</h3>
+                                <ul>
+                                    <li>IT strategy and planning</li>
+                                    <li>Technology assessment and audit</li>
+                                    <li>System integration recommendations</li>
+                                    <li>Vendor selection and management</li>
+                                    <li>Project management and oversight</li>
+                                    <li>Digital transformation guidance</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__info fade-in">
+                                <div class="service-detail__info-item">
+                                    <h4>Deliverables:</h4>
+                                    <p>Consulting report, implementation plan, ongoing advisory</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Timeframe:</h4>
+                                    <p>1-4 weeks depending on scope</p>
+                                </div>
+                                <div class="service-detail__info-item">
+                                    <h4>Starting Price:</h4>
+                                    <p>₦50,000</p>
+                                </div>
+                            </div>
+                            <div class="service-detail__actions fade-in">
+                                <a href="contact.html?service=it-consulting" class="btn btn--primary">Get a Quote</a>
+                                <a href="portfolio.html" class="btn btn--outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="service-detail__image fade-in">
+                            <img src="assets/img/general.jpg" alt="IT Consulting Service" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Process Section -->
+        <section class="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Our Process</h2>
+                    <p class="section-header__subtitle fade-in">How we deliver exceptional technology solutions</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">1</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Discovery & Consultation</h3>
+                            <p class="process-step__description">
+                                We begin by understanding your business needs, challenges, and goals. Our team conducts thorough research and consultation to identify the best technology solutions for your specific requirements.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">2</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Planning & Strategy</h3>
+                            <p class="process-step__description">
+                                Based on our findings, we develop a comprehensive plan and strategy tailored to your business. This includes timelines, deliverables, and key milestones to ensure project success.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">3</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Implementation & Development</h3>
+                            <p class="process-step__description">
+                                Our expert team implements the solution using industry best practices and the latest technologies. We keep you informed throughout the process with regular updates and progress reports.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">4</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Testing & Quality Assurance</h3>
+                            <p class="process-step__description">
+                                We rigorously test the solution to ensure it meets all requirements and functions flawlessly. Our quality assurance process identifies and resolves any issues before deployment.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">5</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Deployment & Training</h3>
+                            <p class="process-step__description">
+                                We deploy the solution and provide comprehensive training to your team to ensure they can use it effectively. Our goal is to make the transition as smooth as possible.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in">
+                        <div class="process-step__number">6</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Support & Maintenance</h3>
+                            <p class="process-step__description">
+                                Our relationship doesn't end at deployment. We provide ongoing support and maintenance to ensure your systems continue to perform optimally and evolve with your business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Client Success Stories</h2>
+                    <p class="section-header__subtitle fade-in">Hear from businesses we've helped transform</p>
+                </div>
+                
+                <div class="testimonials__slider">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "TEKINTA developed a custom e-commerce website for our retail business that has significantly increased our online sales. Their team was professional, responsive, and delivered beyond our expectations."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client1.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Bola Adekunle</h4>
+                                <p class="testimonial-card__author-title">CEO, Fashion Retail Store</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "The cybersecurity solutions implemented by TEKINTA have given us peace of mind. Their expertise and ongoing support have been invaluable to our business operations."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client2.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Ibrahim Musa</h4>
+                                <p class="testimonial-card__author-title">IT Manager, Financial Services Firm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "TEKINTA's POS system has streamlined our sales process and improved inventory management. Their training ensured our team could use the system effectively from day one."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client3.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Ngozi Eze</h4>
+                                <p class="testimonial-card__author-title">Owner, Restaurant Chain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Frequently Asked Questions</h2>
+                    <p class="section-header__subtitle fade-in">Find answers to common questions about our services</p>
+                </div>
+                
+                <div class="faq__list">
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">How long does it take to complete a web development project?</div>
+                        <div class="faq-answer">
+                            <p>The timeline for a web development project depends on its complexity and scope. A simple business website typically takes 2-4 weeks, while a more complex web application can take 6-12 weeks or longer. We provide a detailed timeline during the planning phase and keep you updated throughout the project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">Do you provide ongoing support and maintenance?</div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer comprehensive support and maintenance packages for all our services. Our support plans include regular updates, security monitoring, bug fixes, and technical assistance to ensure your systems continue to perform optimally.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">Can you work with existing systems and software?</div>
+                        <div class="faq-answer">
+                            <p>Absolutely. We have extensive experience integrating new solutions with existing systems and software. Our team can assess your current infrastructure and recommend the best approach to ensure seamless integration and minimal disruption to your operations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">What industries do you serve?</div>
+                        <div class="faq-answer">
+                            <p>We serve businesses across various industries including retail, hospitality, healthcare, finance, education, and more. Our solutions are customized to meet the specific needs and challenges of each industry we serve.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">How do you ensure the security of my data?</div>
+                        <div class="faq-answer">
+                            <p>Data security is our top priority. We implement industry-leading security measures including encryption, access controls, regular security audits, and compliance with relevant data protection regulations. We also provide security awareness training to help your team maintain best practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in">
+                        <div class="faq-question">What is your pricing structure?</div>
+                        <div class="faq-answer">
+                            <p>Our pricing is based on the scope and complexity of each project. We offer transparent pricing with no hidden fees. After understanding your requirements, we provide a detailed quote outlining all costs involved. We also offer flexible payment plans to accommodate different budgets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__inner">
+                    <h2 class="cta__title fade-in">Ready to Transform Your Business?</h2>
+                    <p class="cta__subtitle fade-in">Get in touch with our team today to discuss your technology needs</p>
+                    <div class="cta__actions fade-in">
+                        <a href="contact.html" class="btn btn--primary btn--large">Get a Free Quote</a>
+                        <a href="tel:+2349069102902" class="btn btn--outline btn--large">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo">
+                    </div>
+                    <p class="footer__tagline">Your Trusted Tech Partner</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10 2.38 10 2.38 10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.74 21 8.23 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75C18.5 7.44 17.94 8 17.25 8C16.56 8 16 7.44 16 6.75C16 6.06 16.56 5.5 17.25 5.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Services</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="services.html#web-development" class="footer__link">Web Development</a></li>
+                        <li class="footer__link-item"><a href="services.html#cybersecurity" class="footer__link">Cybersecurity</a></li>
+                        <li class="footer__link-item"><a href="services.html#pos-systems" class="footer__link">POS Systems</a></li>
+                        <li class="footer__link-item"><a href="services.html#system-repair" class="footer__link">System Repair</a></li>
+                        <li class="footer__link-item"><a href="services.html#training" class="footer__link">Training</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="about.html" class="footer__link">About Us</a></li>
+                        <li class="footer__link-item"><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li class="footer__link-item"><a href="blog.html" class="footer__link">Blog</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li class="footer__link-item"><a href="careers.html" class="footer__link">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <address class="footer__contact">
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                            </svg>
+                            <span>Abeokuta, Ogun State, Nigeria.</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:+2349069102902">+234 906 910 2902</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V8L12 13L20 8V18ZM20 6L12 11L4 6H20Z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:tekintaglobalconcept@gmail.com">tekintaglobalconcept@gmail.com</a>
+                        </div>
+                    </address>
+                    
+                    <div class="footer__whatsapp">
+                        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2026 TEKINTA Digital Solutions. All rights reserved.
+                </div>
+                <div class="footer__legal">
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="refund.html" class="footer__legal-link">Refund Policy</a>
+                    <a href="sla.html" class="footer__legal-link">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="whatsapp-widget__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Additional JavaScript for animations and interactions -->
+    <script>
+        // Fade in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+            
+            // Service filter functionality
+            const filterButtons = document.querySelectorAll('.services-filter__btn');
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Filter services
+                    const filter = button.getAttribute('data-filter');
+                    
+                    serviceCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // FAQ accordion functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Toggle active class
+                    item.classList.toggle('active');
+                    
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
+    <!-- Google Analytics placeholder -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>

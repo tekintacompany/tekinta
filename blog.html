@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TEKINTA Digital Solutions</title>
+    <meta name="description" content="Explore cutting-edge technology insights, trends, and innovations from TEKINTA's tech experts. Stay ahead with our thought leadership content.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tekinta.pages.dev/blog.html">
+    <meta property="og:title" content="Blog - TEKINTA Digital Solutions">
+    <meta property="og:description" content="Explore cutting-edge technology insights, trends, and innovations from TEKINTA's tech experts. Stay ahead with our thought leadership content.">
+    <meta property="og:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tekinta.pages.dev/blog.html">
+    <meta property="twitter:title" content="Blog - TEKINTA Digital Solutions">
+    <meta property="twitter:description" content="Explore cutting-edge technology insights, trends, and innovations from TEKINTA's tech experts. Stay ahead with our thought leadership content.">
+    <meta property="twitter:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "TEKINTA Digital Solutions Blog",
+        "description": "Cutting-edge technology insights, trends, and innovations from industry experts",
+        "url": "https://tekinta.pages.dev/blog.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TEKINTA Digital Solutions",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tekinta.pages.dev/assets/img/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Custom Styles for Blog Page -->
+    <style>
+        /* Blog Page Specific Styles */
+        .blog-hero {
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+        
+        .blog-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .blog-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        
+        .blog-hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blog-hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .blog-categories {
+            background: #f8f9fa;
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .blog-categories::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #f8f9fa;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        
+        .categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .category-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #0a2463;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-count {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .featured-post {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .featured-post-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .featured-post-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .featured-post-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .featured-post-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .featured-post-content {
+            padding: 2rem;
+        }
+        
+        .featured-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .featured-post-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .featured-post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .featured-post-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #495057;
+            margin-bottom: 2rem;
+        }
+        
+        .featured-post-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #003B73;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.3s ease;
+        }
+        
+        .featured-post-link:hover {
+            gap: 1rem;
+        }
+        
+        .blog-posts {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a2463;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .blog-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-post-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-post-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .blog-post-card:hover .blog-post-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-post-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-post-category {
+            display: inline-block;
+            background: rgba(0, 59, 115, 0.1);
+            color: #003B73;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-post-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0a2463;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .blog-post-excerpt {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-post-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #003B73;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.3s ease;
+        }
+        
+        .blog-post-link:hover {
+            gap: 1rem;
+        }
+        
+        .newsletter-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a2463 0%, #1e50a2 50%, #003B73 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .newsletter-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvcGF0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+            opacity: 0.4;
+        }
+        
+        .newsletter-container {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .newsletter-container h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .newsletter-container p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .newsletter-button {
+            background: white;
+            color: #003B73;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .newsletter-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .load-more {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .load-more-button {
+            background: linear-gradient(135deg, #003B73, #1e50a2);
+            color: white;
+            border: none;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .load-more-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 59, 115, 0.2);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .featured-post-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-post-image {
+                order: 2;
+            }
+            
+            .featured-post-content {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .blog-hero p {
+                font-size: 1rem;
+            }
+            
+            .categories-container {
+                gap: 1rem;
+            }
+            
+            .category-card {
+                width: calc(50% - 0.5rem);
+            }
+            
+            .featured-post-content h2 {
+                font-size: 2rem;
+            }
+            
+            .blog-posts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .category-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="TEKINTA Digital Solutions Home">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo" width="180" height="50">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav nav--desktop" aria-label="Main navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link nav__link--active" aria-current="page">Blog</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-navigation">
+                    <span class="mobile-menu-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav nav--mobile" id="mobile-navigation" aria-label="Mobile navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link nav__link--active" aria-current="page">Blog</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+2349069102902" class="mobile-sticky-bar__button mobile-sticky-bar__button--call" aria-label="Call us">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="mobile-sticky-bar__button mobile-sticky-bar__button--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="blog-hero" aria-labelledby="blog-heading">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1 id="blog-heading">Tech Insights & Innovation</h1>
+                    <p>Explore cutting-edge technology trends, expert insights, and innovative solutions that are shaping the future of business</p>
+                    <div class="blog-hero-buttons">
+                        <a href="#featured-post" class="btn-primary">Featured Article</a>
+                        <a href="#categories" class="btn-outline">Browse Topics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categories Section -->
+        <section class="blog-categories" id="categories" aria-labelledby="categories-heading">
+            <div class="container">
+                <h2 id="categories-heading" class="section-title">Explore by Category</h2>
+                <div class="categories-container">
+                    <div class="category-card" data-category="cybersecurity">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="category-name">Cybersecurity</h3>
+                        <p class="category-count">4 Articles</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="web-development">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="category-name">Web Development</h3>
+                        <p class="category-count">3 Articles</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="pos-systems">
+                        <div class="category-icon">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <h3 class="category-name">POS Systems</h3>
+                        <p class="category-count">2 Articles</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="system-repair">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-name">System Repair</h3>
+                        <p class="category-count">2 Articles</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="e-commerce">
+                        <div class="category-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="category-name">E-commerce</h3>
+                        <p class="category-count">1 Article</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="it-solutions">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-name">IT Solutions</h3>
+                        <p class="category-count">1 Article</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Post Section -->
+        <section class="featured-post" id="featured-post" aria-labelledby="featured-heading">
+            <div class="container">
+                <div class="featured-post-container">
+                    <div class="featured-post-image">
+                        <img src="assets/img/blog.jpg" alt="Cybersecurity Trends for 2023" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="featured-post-content">
+                        <span class="featured-badge">Featured Article</span>
+                        <h2 id="featured-heading" class="featured-post-title">Top Cybersecurity Trends to Watch in 2023</h2>
+                        <div class="featured-post-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <p class="featured-post-excerpt">
+                            As technology continues to evolve, so do the threats that businesses face. In this comprehensive guide, we explore the top cybersecurity trends that every business should be aware of in 2023 and how to protect your organization from emerging threats.
+                        </p>
+                        <a href="#blog/cybersecurity-trends-2023" class="featured-post-link">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Posts Section -->
+        <section class="blog-posts" aria-labelledby="posts-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="posts-heading" class="section-title">Latest Articles</h2>
+                    <p class="section-subtitle">Stay updated with the latest technology insights and trends</p>
+                </div>
+                
+                <div class="blog-posts-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="How to Secure Your WordPress Website" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Web Development</span>
+                            <h3 class="blog-post-title">How to Secure Your WordPress Website</h3>
+                            <p class="blog-post-excerpt">
+                                WordPress powers over 40% of all websites on the internet, making it a prime target for hackers. Learn essential tips to secure your WordPress website.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                                <span><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="#blog/wordpress-security" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 2 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="Quick Laptop Optimization Tips" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">System Repair</span>
+                            <h3 class="blog-post-title">Quick Laptop Optimization Tips for Better Performance</h3>
+                            <p class="blog-post-excerpt">
+                                Is your laptop running slower than usual? Before you consider replacing it, try these simple optimization tips to boost performance.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> May 15, 2023</span>
+                                <span><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#blog/laptop-optimization" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 3 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="Choosing the Right POS System" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">POS Systems</span>
+                            <h3 class="blog-post-title">Choosing the Right POS System for Your Business</h3>
+                            <p class="blog-post-excerpt">
+                                A good POS system can streamline your operations and improve customer experience. This guide will help you choose the right POS system.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> April 30, 2023</span>
+                                <span><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <a href="#blog/choosing-pos-system" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 4 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="Remote Work Security" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Cybersecurity</span>
+                            <h3 class="blog-post-title">Essential Security Practices for Remote Work</h3>
+                            <p class="blog-post-excerpt">
+                                With remote work becoming the new normal, ensuring the security of your business data is more important than ever. Discover essential security practices.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> April 15, 2023</span>
+                                <span><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="#blog/remote-work-security" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 5 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="E-commerce Trends" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">E-commerce</span>
+                            <h3 class="blog-post-title">E-commerce Trends That Will Shape 2023</h3>
+                            <p class="blog-post-excerpt">
+                                The e-commerce landscape is constantly evolving. Stay ahead of the competition by understanding the key trends that will shape online retail in 2023.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> March 28, 2023</span>
+                                <span><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <a href="#blog/ecommerce-trends-2023" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 6 -->
+                    <article class="blog-post-card">
+                        <div class="blog-post-image">
+                            <img src="assets/img/blog.jpg" alt="Data Backup Strategies" loading="lazy" width="400" height="200">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">IT Solutions</span>
+                            <h3 class="blog-post-title">Effective Data Backup Strategies for Small Businesses</h3>
+                            <p class="blog-post-excerpt">
+                                Data loss can be catastrophic for any business. Learn about effective data backup strategies that can protect your business from data loss.
+                            </p>
+                            <div class="blog-post-meta">
+                                <span><i class="far fa-calendar"></i> March 15, 2023</span>
+                                <span><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <a href="#blog/data-backup-strategies" class="blog-post-link">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-button" id="loadMorePosts">
+                        Load More Articles <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <div class="newsletter-container">
+                    <h2 id="newsletter-heading">Stay Updated with Tech Insights</h2>
+                    <p>Subscribe to our newsletter and get the latest technology trends, tips, and exclusive content delivered to your inbox.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                    <div id="newsletter-message" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta__inner">
+                    <h2 id="cta-heading" class="cta__title">Need Tech Solutions for Your Business?</h2>
+                    <p class="cta__subtitle">Get in touch with our experts today for a free consultation</p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary btn--large">Get a Free Quote</a>
+                        <a href="tel:+2349069102902" class="btn btn--outline btn--large">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo" width="180" height="50">
+                    </div>
+                    <p class="footer__tagline">Your Trusted Tech Partner</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10 2.38 10 2.38 10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.74 21 8.23 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75C18.5 7.44 17.94 8 17.25 8C16.56 8 16 7.44 16 6.75C16 6.06 16.56 5.5 17.25 5.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Services</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="services.html#web-development" class="footer__link">Web Development</a></li>
+                        <li class="footer__link-item"><a href="services.html#cybersecurity" class="footer__link">Cybersecurity</a></li>
+                        <li class="footer__link-item"><a href="services.html#pos-systems" class="footer__link">POS Systems</a></li>
+                        <li class="footer__link-item"><a href="services.html#system-repair" class="footer__link">System Repair</a></li>
+                        <li class="footer__link-item"><a href="services.html#training" class="footer__link">Training</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="about.html" class="footer__link">About Us</a></li>
+                        <li class="footer__link-item"><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li class="footer__link-item"><a href="blog.html" class="footer__link">Blog</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li class="footer__link-item"><a href="pricing.html" class="footer__link">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <address class="footer__contact">
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                            </svg>
+                            <span>Abeokuta, Ogun State, Nigeria.</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:+2349069102902">+234 906 910 2902</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V8L12 13L20 8V18ZM20 6L12 11L4 6H20Z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:tekintaglobalconcept@gmail.com">tekintaglobalconcept@gmail.com</a>
+                        </div>
+                    </address>
+                    
+                    <div class="footer__whatsapp">
+                        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2026 TEKINTA Digital Solutions. All rights reserved.
+                </div>
+                <div class="footer__legal">
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="refund.html" class="footer__legal-link">Refund Policy</a>
+                    <a href="sla.html" class="footer__legal-link">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="whatsapp-widget__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Custom JavaScript for Blog Page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category cards click handler
+            const categoryCards = document.querySelectorAll('.category-card');
+            
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    // In a real implementation, this would filter the blog posts by category
+                    console.log(`Filtering by category: ${category}`);
+                    
+                    // Visual feedback
+                    categoryCards.forEach(c => c.style.transform = '');
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.getElementById('newsletter-form');
+            const newsletterMessage = document.getElementById('newsletter-message');
+            
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // Show success message
+                    newsletterMessage.innerHTML = '<div class="newsletter-success">Thank you for subscribing! Please check your email to confirm.</div>';
+                    newsletterMessage.className = 'newsletter-message newsletter-message--success';
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Remove message after 5 seconds
+                    setTimeout(() => {
+                        newsletterMessage.innerHTML = '';
+                        newsletterMessage.className = 'newsletter-message';
+                    }, 5000);
+                });
+            }
+            
+            // Load more posts button
+            const loadMoreButton = document.getElementById('loadMorePosts');
+            
+            if (loadMoreButton) {
+                loadMoreButton.addEventListener('click', function() {
+                    // In a real implementation, this would load more blog posts via AJAX
+                    console.log('Loading more posts...');
+                    
+                    // Visual feedback
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                    this.disabled = true;
+                    
+                    // Simulate loading delay
+                    setTimeout(() => {
+                        this.innerHTML = 'Load More Articles <i class="fas fa-plus"></i>';
+                        this.disabled = false;
+                        
+                        // In a real implementation, new posts would be added to the grid here
+                        alert('In a real implementation, more blog posts would be loaded here.');
+                    }, 1500);
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Google Analytics placeholder -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>

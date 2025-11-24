@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TEKINTA Digital Solutions</title>
+    <meta name="description" content="Learn about TEKINTA Digital Solutions, your trusted tech partner in Nigeria. Discover our mission, vision, values, and commitment to excellence.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tekinta.pages.dev/about.html">
+    <meta property="og:title" content="About Us - TEKINTA Digital Solutions">
+    <meta property="og:description" content="Learn about TEKINTA Digital Solutions, your trusted tech partner in Nigeria. Discover our mission, vision, values, and commitment to excellence.">
+    <meta property="og:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tekinta.pages.dev/about.html">
+    <meta property="twitter:title" content="About Us - TEKINTA Digital Solutions">
+    <meta property="twitter:description" content="Learn about TEKINTA Digital Solutions, your trusted tech partner in Nigeria. Discover our mission, vision, values, and commitment to excellence.">
+    <meta property="twitter:image" content="https://tekinta.pages.dev/assets/img/introimage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Additional styles for animations -->
+    <style>
+        /* Corporate Color Palette */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00A8E8;
+            --accent-color: #FF6B35;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+            --success-color: #28a745;
+            --gradient-1: linear-gradient(135deg, #0056b3, #00A8E8);
+            --gradient-2: linear-gradient(135deg, #00A8E8, #7ec8e3);
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Hero Section Enhancements */
+        .hero--about {
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.9), rgba(0, 168, 232, 0.8)), url('assets/img/tekinta-hero-about.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .hero--about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/img/pattern.svg');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .hero__title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero__subtitle {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .btn--primary {
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn--primary:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn--outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn--outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Stats Section */
+        .stats--highlight {
+            padding: 4rem 0;
+            background-color: white;
+        }
+        
+        .stats__grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .stat-card {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card__number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card__label {
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+        
+        /* Story Section */
+        .story {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .story__content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .story__text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .story__text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .story__image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .story__image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .story__image:hover img {
+            transform: scale(1.03);
+        }
+        
+        /* Timeline styles */
+        .timeline-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: 50%;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.2);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -12px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Responsive timeline */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+                text-align: left !important;
+                left: 0 !important;
+            }
+            
+            .timeline-dot {
+                left: 8px !important;
+                right: auto !important;
+            }
+        }
+        
+        /* Mission & Vision Section */
+        .mission-vision {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .mission-vision__grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .mission-vision__card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-vision__card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-1);
+        }
+        
+        .mission-vision__card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .mission-vision__icon {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mission-vision__title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .mission-vision__description {
+            line-height: 1.6;
+        }
+        
+        /* Values Section */
+        .values {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .values__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .value-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-card__icon {
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-card__title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .value-card__description {
+            line-height: 1.6;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .testimonials__slider {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .testimonial-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-card__text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-card__author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-card__author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .testimonial-card__author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Team Section */
+        .team {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .team__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member__image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .team-member__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .team-member__image img {
+            transform: scale(1.05);
+        }
+        
+        .team-member__content {
+            padding: 1.5rem;
+        }
+        
+        .team-member__name {
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+            color: var(--primary-color);
+        }
+        
+        .team-member__title {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .team-member__bio {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .team-member__social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .team-member__social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .team-member__social-link:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .team__cta {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .team__cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .why-choose-us__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .why-choose-us__item {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .why-choose-us__item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-1);
+        }
+        
+        .why-choose-us__item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .why-choose-us__icon {
+            margin-bottom: 1.5rem;
+        }
+        
+        .why-choose-us__title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .why-choose-us__description {
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/img/pattern.svg');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .cta__inner {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta__title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta__subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn--large {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+        }
+        
+        .btn--outline.btn--large {
+            border-color: white;
+            color: white;
+        }
+        
+        .btn--outline.btn--large:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav nav--desktop">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">About</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="mobile-menu-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav nav--mobile">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+2349069102902" class="mobile-sticky-bar__button mobile-sticky-bar__button--call" aria-label="Call us">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="mobile-sticky-bar__button mobile-sticky-bar__button--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg class="mobile-sticky-bar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero hero--about">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title fade-in">Transforming Businesses Through Technology</h1>
+                    <p class="hero__subtitle fade-in">Your trusted tech partner in Nigeria, delivering innovative digital solutions since 2018</p>
+                    <div class="hero__actions fade-in">
+                        <a href="#our-story" class="btn btn--primary">Discover Our Story</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="stats stats--highlight">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">200+</div>
+                        <div class="stat-card__label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">300+</div>
+                        <div class="stat-card__label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">7</div>
+                        <div class="stat-card__label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-card__number">10</div>
+                        <div class="stat-card__label">Team Members</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Story Section -->
+        <section id="our-story" class="story">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Our Story</h2>
+                    <p class="section-header__subtitle fade-in">From a small startup to a leading tech solutions provider</p>
+                </div>
+                
+                <div class="story__content">
+                    <div class="story__text fade-in">
+                        <p>
+                            Founded in 2018, TEKINTA Digital Solutions began with a simple mission: to provide businesses in Nigeria with reliable, innovative, and cost-effective technology solutions. What started as a small team of passionate tech enthusiasts has grown into a trusted partner for companies of all sizes across various industries.
+                        </p>
+                        <p>
+                            Our journey has been marked by continuous growth, learning, and adaptation to the ever-evolving technology landscape. We've faced challenges, celebrated successes, and most importantly, built lasting relationships with our clients who trust us to deliver exceptional results.
+                        </p>
+                        <p>
+                            Today, TEKINTA stands as a testament to what can be achieved with dedication, expertise, and a customer-centric approach. We remain committed to our founding principles while embracing innovation and excellence in everything we do.
+                        </p>
+                    </div>
+                    <div class="story__image fade-in">
+                        <img src="assets/img/abouttekinta.jpg" alt="TEKINTA Office" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Our Journey</h2>
+                    <p class="section-header__subtitle fade-in">Key milestones in our growth</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2018</h3>
+                            <p>TEKINTA Digital Solutions founded with a focus on web development and system repair</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2019</h3>
+                            <p>Expanded services to include cybersecurity solutions and POS systems</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2020</h3>
+                            <p>Reached 100+ clients milestone despite global challenges</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2021</h3>
+                            <p>Launched training division to empower businesses with tech knowledge</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2022</h3>
+                            <p>Expanded team to 15+ professionals and opened second office in Abuja</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2023</h3>
+                            <p>Reached 300+ projects milestone and recognized as industry leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mission-vision__grid">
+                    <div class="mission-vision__card fade-in">
+                        <div class="mission-vision__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="var(--primary-color)"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="var(--primary-color)"/>
+                            </svg>
+                        </div>
+                        <h3 class="mission-vision__title">Our Mission</h3>
+                        <p class="mission-vision__description">
+                            To provide innovative, reliable, and cost-effective technology solutions that empower businesses to thrive in the digital age. We are committed to excellence, integrity, and customer satisfaction in everything we do.
+                        </p>
+                    </div>
+                    
+                    <div class="mission-vision__card fade-in">
+                        <div class="mission-vision__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="var(--primary-color)"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9ZM12 13C11.45 13 11 12.55 11 12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="mission-vision__title">Our Vision</h3>
+                        <p class="mission-vision__description">
+                            To be the leading technology solutions provider in Nigeria and beyond, recognized for our innovation, reliability, and commitment to helping businesses succeed through technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values Section -->
+        <section class="values">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Our Core Values</h2>
+                    <p class="section-header__subtitle fade-in">The principles that guide our business</p>
+                </div>
+                
+                <div class="values__grid">
+                    <div class="value-card fade-in">
+                        <div class="value-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="var(--secondary-color)"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="var(--secondary-color)"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Integrity</h3>
+                        <p class="value-card__description">
+                            We conduct our business with the highest level of honesty, transparency, and ethical standards. We believe in doing what's right, even when no one is watching.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card fade-in">
+                        <div class="value-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 11H7V13H9V11ZM13 11H11V13H13V11ZM17 11H15V13H17V11ZM19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3 20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V9H19V20Z" fill="var(--secondary-color)"/>
+                                <path d="M7 7H17V8H7V7Z" fill="white" opacity="0.3"/>
+                                <path d="M7 11H9V13H7V11ZM11 11H13V13H11V11ZM15 11H17V13H15V11ZM7 15H9V17H7V15ZM11 15H13V17H11V15ZM15 15H17V17H15V15Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Reliability</h3>
+                        <p class="value-card__description">
+                            We deliver on our promises and meet our commitments. Our clients can count on us to provide consistent, high-quality service and support.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card fade-in">
+                        <div class="value-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="var(--secondary-color)"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="var(--secondary-color)"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Innovation</h3>
+                        <p class="value-card__description">
+                            We embrace new technologies and creative solutions to address our clients' challenges. We continuously seek ways to improve and innovate.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card fade-in">
+                        <div class="value-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="var(--secondary-color)"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9ZM12 13C11.45 13 11 12.55 11 12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Customer Focus</h3>
+                        <p class="value-card__description">
+                            Our clients are at the center of everything we do. We listen to their needs, understand their challenges, and deliver solutions that exceed their expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">What Our Clients Say</h2>
+                    <p class="section-header__subtitle fade-in">Hear from businesses we've helped transform</p>
+                </div>
+                
+                <div class="testimonials__slider">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "TEKINTA transformed our online presence with a professional website that perfectly represents our brand. Their team was professional, responsive, and delivered beyond our expectations."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client1.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Bola Adekunle</h4>
+                                <p class="testimonial-card__author-title">CEO, Fashion Retail Store</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "The cybersecurity solutions implemented by TEKINTA have given us peace of mind. Their expertise and ongoing support have been invaluable to our business operations."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client2.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Ibrahim Musa</h4>
+                                <p class="testimonial-card__author-title">IT Manager, Financial Services Firm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">
+                                "TEKINTA's POS system has streamlined our sales process and improved inventory management. Their training ensured our team could use the system effectively from day one."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__author-image">
+                                <img src="assets/img/testimonials/client3.jpg" alt="Client" loading="lazy">
+                            </div>
+                            <div class="testimonial-card__author-info">
+                                <h4 class="testimonial-card__author-name">Ngozi Eze</h4>
+                                <p class="testimonial-card__author-title">Owner, Restaurant Chain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section class="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Meet Our Leadership Team</h2>
+                    <p class="section-header__subtitle fade-in">The experts behind our success</p>
+                </div>
+                
+                <div class="team__grid">
+                    <div class="team-member fade-in">
+                        <div class="team-member__image">
+                            <img src="assets/img/team/ceo.jpg" alt="CEO" loading="lazy">
+                        </div>
+                        <div class="team-member__content">
+                            <h3 class="team-member__name">Adefemi O. Ajayi</h3>
+                            <p class="team-member__title">CEO & Founder</p>
+                            <p class="team-member__bio">
+                                With over 10 years of experience in the technology industry, Adeola leads our team with vision and passion for innovation.
+                            </p>
+                            <div class="team-member__social">
+                                <a href="#" class="team-member__social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member fade-in">
+                        <div class="team-member__image">
+                            <img src="assets/img/team/staff.jpg" alt="CTO" loading="lazy">
+                        </div>
+                        <div class="team-member__content">
+                            <h3 class="team-member__name">Chukwuemeka Okafor</h3>
+                            <p class="team-member__title">CTO</p>
+                            <p class="team-member__bio">
+                                Emeka is our technical expert, overseeing all development projects and ensuring we deliver cutting-edge solutions.
+                            </p>
+                            <div class="team-member__social">
+                                <a href="#" class="team-member__social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member fade-in">
+                        <div class="team-member__image">
+                            <img src="assets/img/team/staff.jpg" alt="Security Lead" loading="lazy">
+                        </div>
+                        <div class="team-member__content">
+                            <h3 class="team-member__name">Fatima Bello</h3>
+                            <p class="team-member__title">Security Lead</p>
+                            <p class="team-member__bio">
+                                Fatima is our cybersecurity expert, ensuring our solutions are secure and compliant with industry standards.
+                            </p>
+                            <div class="team-member__social">
+                                <a href="#" class="team-member__social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member fade-in">
+                        <div class="team-member__image">
+                            <img src="assets/img/team/staff.jpg" alt="Operations Manager" loading="lazy">
+                        </div>
+                        <div class="team-member__content">
+                            <h3 class="team-member__name">Tunde Adebayo</h3>
+                            <p class="team-member__title">Operations Manager</p>
+                            <p class="team-member__bio">
+                                Tunde ensures smooth operations and project delivery, coordinating between our team and clients.
+                            </p>
+                            <div class="team-member__social">
+                                <a href="#" class="team-member__social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team__cta">
+                    <p class="team__cta-text">Join our team of passionate tech professionals</p>
+                    <a href="#careers" class="btn btn--outline">View Open Positions</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title fade-in">Why Choose TEKINTA?</h2>
+                    <p class="section-header__subtitle fade-in">What sets us apart from the competition</p>
+                </div>
+                
+                <div class="why-choose-us__grid">
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="var(--primary-color)"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="var(--primary-color)"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">Expert Team</h3>
+                        <p class="why-choose-us__description">
+                            Our team consists of certified professionals with extensive experience in their respective fields.
+                        </p>
+                    </div>
+                    
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="var(--primary-color)"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 8C9.24 8 7 10.24 7 13C7 15.76 9.24 18 12 18C14.76 18 17 15.76 17 13C17 10.24 14.76 8 12 8ZM12 16C10.34 16 9 14.66 9 13C9 11.34 10.34 10 12 10C13.66 10 15 11.34 15 13C15 14.66 13.66 16 12 16Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">Quality Assurance</h3>
+                        <p class="why-choose-us__description">
+                            We adhere to industry best practices and rigorous quality standards to ensure excellence in all our deliverables.
+                        </p>
+                    </div>
+                    
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12.5 7.5V14.25H7.5V12.75H11V7.5H12.5ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--primary-color)"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 8C10.34 8 9 9.34 9 11C9 12.66 10.34 14 12 14C13.66 14 15 12.66 15 11C15 9.34 13.66 8 12 8ZM12 12C11.45 12 11 11.55 11 11C11 10.45 11.45 10 12 10C12.55 10 13 10.45 13 11C13 11.55 12.55 12 12 12Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">Timely Delivery</h3>
+                        <p class="why-choose-us__description">
+                            We understand the importance of deadlines and strive to deliver all projects on time, every time.
+                        </p>
+                    </div>
+                    
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z" fill="var(--primary-color)"/>
+                                <path d="M12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="white" opacity="0.3"/>
+                                <path d="M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9ZM12 13C11.45 13 11 12.55 11 12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">24/7 Support</h3>
+                        <p class="why-choose-us__description">
+                            We provide round-the-clock support to ensure our clients' systems run smoothly at all times.
+                        </p>
+                    </div>
+                    
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3ZM19 19H5V9H19V19ZM17 8.5L13.5 12L10.5 9L8 11.5L13.5 17L19 11.5L17 8.5Z" fill="var(--primary-color)"/>
+                                <path d="M7 7H17V8H7V7Z" fill="white" opacity="0.3"/>
+                                <path d="M7 11H9V13H7V11ZM11 11H13V13H11V11ZM15 11H17V13H15V11ZM7 15H9V17H7V15ZM11 15H13V17H11V15ZM15 15H17V17H15V15Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">Competitive Pricing</h3>
+                        <p class="why-choose-us__description">
+                            We offer high-quality services at competitive prices, providing excellent value for our clients' investment.
+                        </p>
+                    </div>
+                    
+                    <div class="why-choose-us__item fade-in">
+                        <div class="why-choose-us__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="var(--primary-color)"/>
+                                <path d="M12 5L5 9V12C5 15.5 7.2 18.7 10.5 20.2L12 20.7L13.5 20.2C16.8 18.7 19 15.5 19 12V9L12 5Z" fill="white" opacity="0.3"/>
+                                <path d="M12 7L7 10V12C7 14.5 8.6 16.7 10.8 17.7L12 18.2L13.2 17.7C15.4 16.7 17 14.5 17 12V10L12 7Z" fill="white"/>
+                                <path d="M12 9L9 11V12C9 13.5 10 14.8 11.3 15.3L12 15.6L12.7 15.3C14 14.8 15 13.5 15 12V11L12 9Z" fill="var(--primary-color)"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-choose-us__title">Customized Solutions</h3>
+                        <p class="why-choose-us__description">
+                            We understand that every business is unique, and we tailor our solutions to meet specific client needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="contact" class="cta">
+            <div class="container">
+                <div class="cta__inner">
+                    <h2 class="cta__title fade-in">Ready to Transform Your Business?</h2>
+                    <p class="cta__subtitle fade-in">Get in touch with our team today to discuss your technology needs</p>
+                    <div class="cta__actions fade-in">
+                        <a href="contact.html" class="btn btn--primary btn--large">Get a Free Quote</a>
+                        <a href="tel:+2349069102902" class="btn btn--outline btn--large">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="TEKINTA Digital Solutions Logo">
+                    </div>
+                    <p class="footer__tagline">Your Trusted Tech Partner</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10 2.38 10 2.38 10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.74 21 8.23 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75C18.5 7.44 17.94 8 17.25 8C16.56 8 16 7.44 16 6.75C16 6.06 16.56 5.5 17.25 5.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Services</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="services.html#web-development" class="footer__link">Web Development</a></li>
+                        <li class="footer__link-item"><a href="services.html#cybersecurity" class="footer__link">Cybersecurity</a></li>
+                        <li class="footer__link-item"><a href="services.html#pos-systems" class="footer__link">POS Systems</a></li>
+                        <li class="footer__link-item"><a href="services.html#system-repair" class="footer__link">System Repair</a></li>
+                        <li class="footer__link-item"><a href="services.html#training" class="footer__link">Training</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="about.html" class="footer__link">About Us</a></li>
+                        <li class="footer__link-item"><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li class="footer__link-item"><a href="blog.html" class="footer__link">Blog</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li class="footer__link-item"><a href="careers.html" class="footer__link">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <address class="footer__contact">
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="currentColor"/>
+                            </svg>
+                            <span>Abeokuta, Ogun State, Nigeria.</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:+2349069102902">+234 906 910 2902</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V8L12 13L20 8V18ZM20 6L12 11L4 6H20Z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:tekintaglobalconcept@gmail.com">tekintaglobalconcept@gmail.com</a>
+                        </div>
+                    </address>
+                    
+                    <div class="footer__whatsapp">
+                        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2026 TEKINTA Digital Solutions. All rights reserved.
+                </div>
+                <div class="footer__legal">
+                    <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="refund.html" class="footer__legal-link">Refund Policy</a>
+                    <a href="sla.html" class="footer__legal-link">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/2349069102902?text=Hello%20TEKINTA,%20I'm%20interested%20in%20your%20services" class="whatsapp-widget__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382C17.136 14.202 15.645 13.466 15.337 13.346C15.029 13.226 14.805 13.166 14.581 13.502C14.357 13.838 13.785 14.522 13.589 14.746C13.393 14.97 13.197 14.998 12.861 14.818C12.525 14.638 11.533 14.316 10.353 13.258C9.427 12.424 8.799 11.394 8.603 11.058C8.407 10.722 8.583 10.542 8.763 10.362C8.925 10.2 9.121 9.958 9.301 9.762C9.481 9.566 9.541 9.426 9.661 9.202C9.781 8.978 9.721 8.782 9.643 8.602C9.565 8.422 8.965 6.931 8.685 6.259C8.413 5.605 8.137 5.693 7.929 5.683C7.733 5.673 7.509 5.671 7.285 5.671C7.061 5.671 6.697 5.751 6.389 6.087C6.081 6.423 5.297 7.159 5.297 8.65C5.297 10.141 6.417 11.582 6.597 11.806C6.777 12.03 8.955 15.37 12.261 16.682C13.061 16.998 13.681 17.186 14.161 17.326C14.965 17.566 15.697 17.534 16.277 17.452C16.925 17.36 18.133 16.714 18.413 16.006C18.693 15.298 18.693 14.702 18.615 14.578C18.537 14.454 18.313 14.374 17.977 14.214L17.472 14.382Z" fill="currentColor"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 13.819 2.487 15.529 3.338 17L2.021 21.923C1.924 22.284 2.252 22.613 2.613 22.516L7.537 21.199C9.008 22.05 10.718 22.537 12.537 22.537C18.06 22.537 22.537 18.06 22.537 12.537C22.537 7.014 18.06 2.537 12.537 2.537L12 2ZM12 20.537C10.395 20.537 8.894 20.068 7.628 19.259L7.227 19.003L4.289 19.771L5.057 16.833L4.801 16.432C3.992 15.166 3.523 13.665 3.523 12.06C3.523 7.603 7.063 4.063 11.52 4.063C15.977 4.063 19.517 7.603 19.517 12.06C19.517 16.517 15.977 20.057 11.52 20.057L12 20.537Z" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Additional JavaScript for animations -->
+    <script>
+        // Fade in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+    
+    <!-- Google Analytics placeholder -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>
