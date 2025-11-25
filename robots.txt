@@ -5,4 +5,5 @@ Allow: /css/
 Allow: /js/
 Allow: /data/
 
-Sitemap: https://tekinta.com/sitemap.xml
+
+Sitemap: https://tekinta.pages.dev/sitemap.xml
